@@ -65,217 +65,46 @@
 
 <h4><font color="black">2025</font></h4>
 
-[15] <b>Q. Wang</b>, Y. You, H. Yang, R. Xu, H. K. Zhang, P. Lu, X. Tong. A TCN-Transformer parallel model for reconstruction of a global, daily, spatially seamless FY-3B soil moisture dataset. Remote Sensing of Environment, 2025, 328: 114841.
+[6] <b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. ***IEEE Transactions on Geoscience and Remote Sensing***, 2025, 63: 1-19.
 
-[14]	C. Zhang, <b>Q. Wang*</b>, P. M. Atkinson. Unsupervised object-based spectral unmixing for subpixel mapping. Remote Sensing of Environment, 2025, 318: 114514.
+[5] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. ***GPS Solutions***, 2025, 29: 130.
 
-[13] X. Ma, <b>Q. Wang*</b>, X. Tong. Nighttime light remote sensing image haze removal based on a deep learning model. Remote Sensing of Environment, 2025, 318: 114575.
+[4] <b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. ***Surveys in Geophysics***, 2025. (Accepted)
 
-[12] <b>Q. Wang</b>, W. Ma, S. Liu, X. Tong, P. M. Atkinson. Data fidelity-oriented spatial-spectral fusion of CRISM and CTX images. ISPRS Journal of Photogrammetry and Remote Sensing, 2025, 220: 172–191.
+[3] <b>K. Ji</b>, Y. Shen, F. Wang, et al. An Efficient Improved Singular Spectrum Analysis for Processing GNSS Position Time Series with Missing Data. ***Geophysical Journal International***, 2025, 240(1): 189-200.
 
-[11] <b>Q. Wang</b>, A. Li, Y. Tang, P. M. Atkinson. M2-STF: Integration of multi-modal data for spatio-temporal fusion. IEEE Transactions on Geoscience and Remote Sensing (in press).
+[2] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. A Recursive Regularized Solution to Geophysical Linear Ill-Posed Inverse Problems. ***IEEE Transactions on Geoscience and Remote Sensing***, 2025, 63: 1-14.
 
-[10] R. Huang, Y. Tang, <b>Q. Wang*</b>. FAD-STF: A deep learning model for spatiotemporal fusion of thermal infrared and passive microwave data. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4509417.
-
-[9] T. Xiao, <b>Q. Wang*</b>, P. M. Atkinson, X. Tong. Mitigating class imbalance and enhancing unlabeled data extraction in semi-supervised deep learning for Martian terrain segmentation. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 5641019.
-
-[8] J. Li, <b>Q. Wang*</b>, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.
-
-[7] L. Wang, <b>Q. Wang*</b>, P. M. Atkinson. Thick cloud removal of Landsat time-series using convolutional LSTM with embedded residual modules. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 5404816.
-
-[6] Y. Xiao, <b>Q. Wang*</b>, H. Xi, X. Tong. A 30 m canopy height map in China created by fusion of multiple relative height metrics. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4411116.
-
-[5] X. Ding, <b>Q. Wang*</b>, H. Yang, P. M. Atkinson. Reconstruction of 500-m, 8-day historical MODIS fractional vegetation cover (FVC) dataset (1982-2000) in China. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4409619.
-
-[4] L. Wang, <b>Q. Wang*</b>, X. Tong, P. M. Atkinson. MST-Net: A general deep learning model for thick cloud removal from optical images. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 5612518.
-
-[3] H. Yang, <b>Q. Wang*</b>, J. Yang, E. S. Krueger, H. Xi, W. Liu, X. Ding, Y. Zhou, T. E. Ochsner. Generating a downscaled hourly surface soil moisture dataset for wildfire prediction. Journal of Hydrology, 2025, 661: 133795.
-
-[2] T. Xiao, <b>Q. Wang*</b>, X. Tong. SOUL: A weakly supervised framework for Martian rock segmentation using scribble labels. International Journal of Applied Earth Observation and Geoinformation (in press).
-
-[1]	 P. Ji, <b>Q. Wang*</b>. Evaluation of the effectiveness of downscaled precipitation data in drought monitoring. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2025, 18: 1039–1053.
+[1] <b>K. Ji</b>, F. Wang. Some New Insights into Efficient ISSA for Processing Incomplete Geodetic Time Series. ***Acta Geodynamica et Geomaterialia***, 2025, 22(4): 531-544.
 
 
 <h4><font color="black">2024</font></h4>
 
-[10]	<b>Q. Wang</b>, Y. Tang, X. Tong, P. M. Atkinson. Filling gaps in cloudy Landsat LST product by spatial-temporal fusion of multi-scale data. Remote Sensing of Environment, 2024, 306: 114142.
+[2] <b>K. Ji</b>, Y. Shen, F. Wang, Q. Chen, L. Zhang. Extended Multiresolution Analysis for Filtering Incomplete Heterogeneous Geophysical Time Series. ***IEEE Transactions on Geoscience and Remote Sensing***, 2024, 62: 1-13.
 
-[9] <b>Q. Wang</b>, J. Li, X. Tong, P. M. Atkinson. TSI-Siamnet: A Siamese network for cloud and shadow detection based on time-series cloudy images. ISPRS Journal of Photogrammetry and Remote Sensing, 2024, 213: 107–123.
+[1] <b>嵇昆浦</b>, 沈云中, 陈秋杰. GRACE时变重力场模型的自适应正则化滤波方法. ***武汉大学学报(信息科学版)***, 2024, 49(11): 2101-2112.
 
-[8]  C. Zhang, <b>Q. Wang*</b>, P. M. Atkinson. Hard-constrained Hopfield neural network for subpixel mapping. IEEE Transactions on Geoscience and Remote Sensing, 2024, 62: 5641212.
-
-[7] <b>Q. Wang</b>, R. Huang. RES-STF: Spatio temporal fusion of visible infrared imaging radiometer suite and Landsat land surface temperature based on Restormer. Journal of Remote Sensing, 2024, 4: 0208.
-
-[6]	Y. Xiao, <b>Q. Wang*</b>, H. K. Zhang. Global natural and planted forests mapping at fine spatial resolution of 30 m. Journal of Remote Sensing, 2024, 4: 0204.
-
-[5]	J. Li, <b>Q. Wang*</b>. CSDFormer: A cloud and shadow detection method for Landsat images based on Transformer. International Journal of Applied Earth Observations and Geoinformation, 2024, 129: 103799.
-
-[4] H. Yang, <b>Q. Wang*</b>, W. Liu. A stepwise method for downscaling SMAP soil moisture dataset in the CONUS during 2015-2019. International Journal of Applied Earth Observations and Geoinformation, 2024, 130: 103912
-
-[3]	H. Yang, <b>Q. Wang*</b>, W. Zhao, P. M. Atkinson. Reconstruction of historical SMAP soil moisture dataset from 1979 to 2015 using CCI time-series. IEEE Transactions on Geoscience and Remote Sensing, 2024, 62: 4502619.
-
-[2]	Y. Tang, <b>Q. Wang*</b>, X. Tong, P. M. Atkinson. Generation of 100-m, hourly land surface temperature based on spatio-temporal fusion. IEEE Transactions on Geoscience and Remote Sensing, 2024, 62: 5001716.
-
-[1]	<b>Q. Wang</b>, P. Ji, P. M. Atkinson. Fusion of surface soil moisture data for spatial downscaling of daily satellite precipitation data. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2024, 17: 1053–1065.
 
 <h4><font color="black">2023</font></h4>
 
-[6] <b>Q. Wang</b>, Y. Tang, Y. Ge, H. Xie, X. Tong, P. M. Atkinson. A comprehensive review of spatial-temporal-spectral information reconstruction techniques. Science of Remote Sensing, 2023, 8: 100102.
+[2] <b>K. Ji</b>, Y. Shen, Q. Chen, F. Wang. Extended Singular Spectrum Analysis for Processing Incomplete Heterogeneous Geodetic Time Series. ***Journal of Geodesy***, 2023, 97(8): 74.
 
-[5]	Y. Xiao, <b>Q. Wang*</b>, X. Tong, P. M. Atkinson. Thirty-meter map of young forest age in China. Earth System Science Data, 2023, 15: 3365–3386.
+[1] <b>K. Ji</b>, Y. Shen, Q. Chen, T. Feng. Extended Principal Component Analysis for Spatiotemporal Filtering of Incomplete Heterogeneous GNSS Position Time Series. ***IEEE Transactions on Geoscience and Remote Sensing***, 2023, 61: 1-19.
 
-[4]	H. Yang, <b>Q. Wang*</b>. Reconstruction of a spatially seamless, daily SMAP (SSD_SMAP) surface soil moisture dataset from 2015 to 2021. Journal of Hydrology, 2023, 621: 129579.
-
-[3]	X. Ma, <b>Q. Wang*</b>, X. Tong. Incorporating inconsistent auxiliary images in haze removal of very high resolution images. International Journal of Applied Earth Observation and Geoinformation, 2023, 119: 103317.
-
-[2]	H. Yang, <b>Q. Wang*</b>, X. Ma, W. Liu, H. Liu. Digital soil mapping based on fine temporal resolution Landsat data produced by spatio-temporal fusion. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2023, 16: 3905–3914.
-
-[1]	Y. Tang, <b>Q. Wang*</b>, P. M. Atkinson. Filling then spatio-temporal fusion for all-sky MODIS land surface temperature generation. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2023, 16: 1350–1364.
 
 <h4><font color="black">2022</font></h4>
 
+[1] <b>K. Ji</b>, Y. Shen, Q. Chen, B. Li, W. Wang. An Adaptive Regularized Solution to Inverse Ill-posed Models. ***IEEE Transactions on Geoscience and Remote Sensing***, 2022, 60: 1-15.
 
-[14]	X. Ma, <b>Q. Wang*</b>, X. Tong, P. M. Atkinson. A deep learning model for incorporating temporal information in haze removal. Remote Sensing of Environment, 2022, 274: 113012.
-
-[13] X. Ma, <b>Q. Wang*</b>, X. Tong. A spectral grouping-based deep learning model for haze removal of hyperspectral images. ISPRS Journal of Photogrammetry and Remote Sensing, 2022, 188: 177–189.
-
-[12] J. Zeng, <b>Q. Wang*</b>. Sparse tensor model-based spectral angle detector for hyperspectral target detection. IEEE Transactions on Geoscience and Remote Sensing, 2022, 60: 5539315.
-
-[11] L. Wang, L. Wang, <b>Q. Wang*</b>, B. Lorenzo. RSCNet: Residual self-calibrated network for hyperspectral image change detection. IEEE Transactions on Geoscience and Remote Sensing, 2022, 60: 5529917.
-
-[10] C. Zhang, <b>Q. Wang*</b>, P. Lu, Y. Ge, P. M. Atkinson. Fast and slow changes constrained spatio-temporal subpixel mapping. IEEE Transactions on Geoscience and Remote Sensing, 2022, 60: 5406616.
-
-[9] <b>Q. Wang</b>, X. Ding, X. Tong, P. M. Atkinson. Real-time spatiotemporal spectral unmixing of MODIS images. IEEE Transactions on Geoscience and Remote Sensing, 2022, 60: 5404816.
-
-[8] K. Peng, <b>Q. Wang*</b>, Y. Tang, X. Tong, P. M. Atkinson. Geographically weighted spatial unmixing for spatio-temporal fusion. IEEE Transactions on Geoscience and Remote Sensing, 2022, 60: 5404217.
-
-[7] L. Wang, L. Wang, <b>Q. Wang*</b>, P. M. Atkinson. SSA-SiamNet: Spatial-spectral-wise attention-based Siamese network for hyperspectral image change detection. IEEE Transactions on Geoscience and Remote Sensingg, 2022, 60: 5510018.
-
-[6] X. Ding, <b>Q. Wang*</b>, X. Tong. Integrating 250 m MODIS data in spectral unmixing for 500 m fractional vegetation cover estimation. International Journal of Applied Earth Observation and Geoinformation, 2022, 111: 102860.
-
-[5] H. Yang, <b>Q. Wang*</b>, W. Zhao, X. Tong, P. M. Atkinson. Reconstruction of global 9 km, 8-day SMAP surface soil moisture dataset during 2015-2020 by spatio-temporal fusion. Journal of Remote Sensing, 2022, 9871246.
-
-[4] C. Zhang, <b>Q. Wang*</b>, H. Xie, Y. Ge, P. M. Atkinson. Spatio-temporal subpixel mapping with cloudy images. Science of Remote Sensing, 2022, 6: 100068.
-
-[3]	<b>Q. Wang</b>, L. Wang, X. Zhu, Y. Ge, X. Tong, P. M. Atkinson. Remote sensing image gap filling based on spatial-spectral random forests. Science of Remote Sensing, 2022, 5: 100048.
-
-[2]	<b>王群明</b>, 张智昊, 张成媛. 融合Sentinel-2数据的高分五号高光谱数据降尺度. 遥感学报, 2022, DOI: 10.11834/jrs.20211420 (网络发表).
-
-[1]	王蓝星, <b>王群明*</b>, 童小华. 融合多光谱影像的高光谱影像厚云去除方法. 测绘学报, 2022, 51(4): 612–621.
-
-<h4><font color="black">2021</font></h4>
-
-[6] <b>Q. Wang</b>, X. Ding, X. Tong, P. M. Atkinson. Spatio-temporal spectral unmixing of time-series images. Remote Sensing of Environment, 2021, 259: 112407.
-
-[5] <b>Q. Wang</b>, K. Peng, Y. Tang, X. Tong, P. M. Atkinson. Blocks-removed spatial unmixing for downscaling MODIS images. Remote Sensing of Environment, 2021, 256: 112325.
-
-[4] Y. Tang, <b>Q. Wang*</b>, X. Tong, P. M. Atkinson. Integrating spatio-temporal-spectral information for downscaling Sentinel-3 OLCI images. ISPRS Journal of Photogrammetry and Remote Sensing, 2021, 180: 130–150.
-
-[3] <b>Q. Wang</b>, L. Wang, Z. Li, X. Tong, P. M. Atkinson. Spatial-spectral radial basis function interpolation-based Landsat ETM+ SLC-off image gap filling. IEEE Transactions on Geoscience and Remote Sensing, 2021, 59(9): 7901–7917.
-
-[2] <b>Q. Wang</b>, L. Wang, C. Wei, Y. Jin, Z. Li, X. Tong, P. M. Atkinson. Filling gaps in Landsat ETM+ SLC-off images with Sentinel-2 images. International Journal of Applied Earth Observation and Geoinformation, 2021, 101: 102365.
-
-[1] P. Lu, W. Shi, <b>Q. Wang* </b>, Z. Li* , Y. Qin, X. Fan. Co-seismic landslide mapping using Sentinel-2 10-m fused NIR narrow, red-edge and SWIR bands. Landslides, 2021, 18(6): 2017–2037.
 
 <h4><font color="black">2020</font></h4>
 
-[8]   <b>Q. Wang</b>, C. Zhang, X. Tong, P. M. Atkinson. General solution to reduce the point spread function effect in subpixel mapping. Remote Sensing of Environment, 2020, 251: 112054.
+[3] <b>K. Ji</b>, Y. Shen, F. Wang. Signal Extraction from GNSS Position Time Series Using Weighted Wavelet Analysis. ***Remote Sensing***, 2020, 12.
 
-[7]    <b>Q. Wang</b>, Y. Tang, X. Tong, P. M. Atkinson. Virtual image pair-based spatio-temporal fusion. Remote Sensing of Environment, 2020, 249: 112009.
+[2] <b>嵇昆浦</b>, 沈云中. 含缺值GNSS基准站坐标序列的非插值小波分析与信号提取. ***测绘学报***, 2020, 49(05).
 
-[6]    <b>Q. Wang</b>, C. Zhang, P. M. Atkinson. Sub-pixel mapping with point constraints. Remote Sensing of Environment, 2020, 244: 111817.
+[1] <b>嵇昆浦</b>, 沈云中. TSVD正则化解法的单位权方差无偏估计. ***武汉大学学报(信息科学版)***, 2020, 45(04).
 
-[5]    <b>Q. Wang</b>, Y. Tang, P. M. Atkinson. The effect of the point spread function on downscaling continua. ISPRS Journal of Photogrammetry and Remote Sensing, 2020, 168: 251-267.
-
-[4]    L. Wang, X. Wang, <b>Q. Wang*</b>, P. M. Atkinson. Investigating the influence of registration errors on the patch-based spatio-temporal fusion method. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2020, 13: 6291–6307.
-
-[3]    <b>Q. Wang</b>, X. Tong, P. M. Atkinson. A geostatistical filter for remote sensing image enhancement. Mathematical Geosciences, 2020, 52(3): 317–336.
-
-[2]    Y. Tang, <b>Q. Wang*</b>, P. M. Atkinson. Quantifying the effect of registration error on spatio-temporal fusion. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2020, 13(1): 487–503.
-
-[1]    <b>Q. Wang</b>, W. Shi, P. M. Atkinson. Information loss-guided multi-resolution image fusion. IEEE Transactions on Geoscience and Remote Sensing, 2020, 58(1): 45–57.
-
-<h4><font color="black">2019 and earlier (Selected)</font></h4>
-
-[1]    P. Ghamisi, B. Rasti, N. Yokoya, <b>Q. Wang</b>, B. Hofle, L. Bruzzone, F. Bovolo, M. Chi, K. Anders, R. Gloaguen, P. M. Atkinson, J. A. Benediktsson. Multisource and multitemporal data fusion in remote sensing. IEEE Geoscience and Remote Sensing Magazine, 2019, 7(1): 6–39.
-
-[2]    <b>Q. Wang</b>, P. M. Atkinson. Spatio-temporal fusion for daily Sentinel-2 images. Remote Sensing of Environment, 2018, 204: 31–42.
-
-[3]    A. Onojeghuo, A. Blackburn, <b>Q. Wang</b>, P. M. Atkinson, D. Kindred, Y. Miao. Rice crop phenology mapping at high spatial and temporal resolution using downscaled MODIS time-series. GIScience & Remote Sensing, 2018, 55(5): 659–677.
-
-[4]    A. Onojeghuo, A. Blackburn, <b>Q. Wang</b>, P. M. Atkinson, D. Kindred, Y. Miao. Mapping paddy rice fields by applying machine learning algorithms to multi-temporal Sentinel-1A and Landsat data. International Journal of Remote Sensing, 2018, 39(4): 1042–1067.
-
-[5]    <b>Q. Wang</b>, Y. Zhang, A. Onojeghuo, X. Zhu, P. M. Atkinson. Enhancing spatio-temporal fusion of MODIS and Landsat data by incorporating 250 m MODIS data. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2017, 10(9): 4116–4123.
-
-[6]    H. Zhang, <b>Q. Wang*</b>, W. Shi, M. Hao. A novel adaptive fuzzy local information c-means clustering algorithm for remotely sensed image classification. IEEE Transactions on Geoscience and Remote Sensing, 2017, 55(9): 5057–5068.
-
-[7]    <b>Q. Wang</b>, A. Blackburn, A. Onojeghu, J. Dash, L. Zhou, Y. Zhang, P. M. Atkinson. Fusion of Landsat 8 OLI and Sentinel-2 MSI data. IEEE Transactions on Geoscience and Remote Sensing, 2017, 55(7): 3885–3899.
-
-[8]    <b>Q. Wang</b>, P. M. Atkinson. The effect of the point spread function on sub-pixel mapping. Remote Sensing of Environment, 2017, 193: 127–137.
-
-[9]    Y. Zhang, P. M. Atkinson, F. Ling, <b>Q. Wang</b>, X. Li, Y. Du. Spectral-spatial adaptive area-to-point regression kriging for MODIS image downscaling. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2017, 10(5): 1883–1896.
-
-[10] <b>Q. Wang</b>, W. Shi, P. M. Atkinson, Q. Wei. Approximate area-to-point regression kriging for fast hyperspectral image sharpening. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2017, 10(1): 286–295.
-
-[11] Y. Zhang, P. M. Atkinson, X. Li, F. Ling, <b>Q. Wang</b>, Y. Du. Learning-based spatial-temporal super-resolution mapping of forest cover with MODIS images. IEEE Transactions on Geoscience and Remote Sensing, 2017, 55(1): 600–614.
-
-[12] <b>Q. Wang</b>, W. Shi, Z. Li, P. M. Atkinson. Fusion of Sentinel-2 images. Remote Sensing of Environment, 2016, 187: 241–252.
-
-[13] Z. Li, W. Shi, P. Lu, L. Yan, <b>Q. Wang</b>, Z. Miao. Landslide mapping from aerial photographs using change detection-based Markov random field. Remote Sensing of Environment, 2016, 187: 76–90.
-
-[14] M. Hao, W. Shi, H. Zhang, <b>Q. Wang</b>, K. Deng. A scale-driven change detection method incorporating uncertainty analysis for remote sensing images. Remote Sensing, 2016, 8(9):745.
-
-[15] <b>Q. Wang</b>, W. Shi, P. M. Atkinson. Spatiotemporal subpixel mapping of time-series images. IEEE Transactions on Geoscience and Remote Sensing, 2016, 54(9): 5397–5411.
-
-[16] Y. Du, Y. Zhang, F. Ling, <b>Q. Wang</b>, W. Li , X. Li. Water bodies’ mapping from Sentinel-2 imagery with modiﬁed normalized difference water index at 10-m spatial resolution produced by sharpening the SWIR band. Remote Sensing, 2016, 8(4):354.
-
-[17] <b>Q. Wang</b>, W. Shi, P. M. Atkinson. Area-to-point regression kriging for pan-sharpening. ISPRS Journal of Photogrammetry and Remote Sensing, 2016, 114: 151–165.
-
-[18] Z. Li, W. Shi, S. W. Myint, P. Lu, <b>Q. Wang</b>. Semi-automated landslide inventory mapping from bitemporal aerial photographs using change detection and level set method. Remote Sensing of Environment, 2016, 175: 215–230.
-
-[19] <b>Q. Wang</b>, W. Shi, P. M. Atkinson, E. Pardo-Iguzquiza. A new geostatistical solution to remote sensing image downscaling. IEEE Transactions on Geoscience and Remote Sensing, 2016, 54(1): 386–396.
-
-[20] <b>Q. Wang</b>, W. Shi, P. M. Atkinson, Y. Zhao. Downscaling MODIS images with area-to-point regression kriging. Remote Sensing of Environment, 2015, 166: 191–204.
-
-[21] L. Wang, S. Hao, <b>Q. Wang*</b>, P. M. Atkinson. A multiple-mapping kernel for hyperspectral image classification. IEEE Geoscience and Remote Sensing Letters, 2015, 12(5): 978–982.
-
-[22] <b>Q. Wang</b>, P. M. Atkinson, W. Shi. Fast subpixel mapping algorithms for subpixel resolution change detection. IEEE Transactions on Geoscience and Remote Sensing, 2015, 53(4): 1692–1706.
-
-[23] <b>Q. Wang</b>, W. Shi, P. M. Atkinson, Z. Li. Land cover change detection at subpixel resolution with a Hopfield neural network. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2015, 8(3): 1339–1352.
-
-[24] Z. Li, W. Shi, <b>Q. Wang</b>, Z. Miao. Extracting man-made objects from high spatial resolution remote sensing images via fast level set evolutions. IEEE Transactions on Geoscience and Remote Sensing, 2015, 53(2): 883–899.
-
-[25] <b>Q. Wang</b>, P. M. Atkinson, W. Shi. Indicator cokriging-based subpixel mapping without prior spatial structure information. IEEE Transactions on Geoscience and Remote Sensing, 2015, 53(1): 309–323.
-
-[26] L. Wang*, S. Hao, <b>Q. Wang*</b>, Y. Wang. Semi-supervised classification for hyperspectral imagery based on spatial-spectral label propagation. ISPRS Journal of Photogrammetry and Remote Sensing, 2014, 97: 123–137.
-
-[27] Y. Chen, Y. Ge, <b>Q. Wang</b>, Y. Jiang. A subpixel mapping algorithm combining pixel-level and subpixel-level spatial dependences with binary integer programming. Remote Sensing Letters, 2014, 5(10): 902–911.
-
-[28] <b>Q. Wang</b>, W. Shi, H. Zhang. Class allocation for soft-then-hard subpixel mapping algorithms with adaptive visiting order of classes. IEEE Geoscience and Remote Sensing Letters, 2014, 11(9): 1494–1498.
-
-[29] L. Wang, S. Hao, Y. Wang, Y. Lin, <b>Q. Wang</b>. Spatial-spectral information-based semi-supervised classification algorithm for hyperspectral imagery. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2014, 7(8): 3577–3585.
-
-[30] <b>Q. Wang</b>, W. Shi. Utilizing multiple subpixel shifted image in subpixel mapping with image interpolation. IEEE Geoscience and Remote Sensing Letters, 2014, 11(4): 798–802.
-
-[31] W. Shi, Z. Miao, <b>Q. Wang</b>, H. Zhang. Spectral-spatial classification and shape features for urban road centerline extraction. IEEE Geoscience and Remote Sensing Letters, 2014, 11(4): 788–792.
-
-[32] <b>Q. Wang</b>, W. Shi, P. M. Atkinson. Sub-pixel mapping of remote sensing images based on radial basis function interpolation. ISPRS Journal of Photogrammetry and Remote Sensing, 2014, 92: 1–15.
-
-[33] <b>Q. Wang</b>, W. Shi, L. Wang. Allocating classes for soft-then-hard subpixel mapping algorithms in units of class. IEEE Transactions on Geoscience and Remote Sensing, 2014, 52(5): 2940–2959.
-
-[34] <b>Q. Wang</b>, W. Shi, L. Wang. Indicator cokriging-based subpixel land cover mapping with shifted images. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2014, 7(1): 327–339.
-
-[35] L. Wang, D. Liu, <b>Q. Wang</b>. Spectral unmixing model based on least squares support vector machine with unmixing residue constraints. IEEE Geoscience and Remote Sensing Letters, 2013, 10(6): 1592–1596.
-
-[36] <b>Q. Wang</b>, W. Shi. Unsupervised classification based on fuzzy c-means with uncertainty analysis. Remote Sensing Letters, 2013, 4(11): 1087–1096.
-
-[37] L. Wang, D. Liu, <b>Q. Wang</b>. Geometric method of fully constrained least squares linear spectral mixture analysis. IEEE Transactions on Geoscience and Remote Sensing, 2013, 51(6): 3558–3566.
-
-[38] L. Wang, <b>Q. Wang*</b>. Subpixel mapping using Markov random field with multiple spectral constraints from subpixel shifted remote sensing images. IEEE Geoscience and Remote Sensing Letters, 2013, 10(3): 598–602.
-
-[39] L. Wang, F. Wei, D. Liu, <b>Q. Wang</b>. Fast implementation of maximum simplex volume-based endmember extraction in original hyperspectral data space. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing, 2013, 6(2): 516–521.
-
-[40] <b>Q. Wang</b>, L. Wang, D. Liu. Particle swarm optimization-based sub-pixel mapping for remote-sensing imagery. International Journal of Remote Sensing, 2012, 33(20): 6480–6496.
 
 <a name="Codes"></a>
 <h3><font color="black">Codes</font></h3>
