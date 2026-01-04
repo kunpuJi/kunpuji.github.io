@@ -65,7 +65,7 @@ redirect_from:
   .nav-item:hover { background-color: #eef4fb; color: #005AB5 !important; transform: translateY(-1px); }
 
   /* ==========================================================================
-     4. 正文样式 & 列表对齐优化 (Flexbox)
+     4. 正文样式 & 列表对齐优化 (Flexbox Gap)
      ========================================================================== */
   .content-container { max-width: 1050px; margin: 0 auto; padding: 0 20px 60px 20px; }
   
@@ -74,50 +74,49 @@ redirect_from:
 
   /* 通用列表样式 (News, Education等) */
   ul.styled-list { 
-    padding-left: 0; /* 移除默认内边距，完全自定义 */
-    list-style: none; /* 移除默认圆点 */
+    padding-left: 0; 
+    list-style: none; 
   }
   ul.styled-list li { 
     margin-bottom: 12px; 
     line-height: 1.7; 
     color: #444; 
-    display: flex; /* 使用 Flex 对齐 Bullet 和文字 */
+    display: flex; 
     align-items: baseline;
+    gap: 12px; /* 统一间距 */
   }
-  /* 自定义 Bullet，保证和下方论文序号对齐 */
+  /* 自定义 Bullet */
   ul.styled-list li::before {
-    content: "•"; /* 或者用 "\f111" FontAwesome */
+    content: "•";
     color: #005AB5;
     font-weight: bold;
     display: inline-block;
-    width: 30px; /* 固定宽度，确保文字起始线一致 */
     flex-shrink: 0;
-    text-align: center; /* 居中显示点 */
   }
 
-  /* 论文列表样式 (关键修改：Flexbox 布局) */
+  /* 论文列表样式 (关键修改：颜色与间距) */
   .pub-item {
-    display: flex; /* 弹性盒子，实现左右分栏 */
-    align-items: baseline; /* 保证序号和第一行文字基线对齐 */
+    display: flex;
+    align-items: baseline; /* 基线对齐保证文字底部对其 */
+    gap: 12px; /* 【修改点】使用 gap 控制固定间距，更紧凑 */
     margin-bottom: 16px;
     line-height: 1.7;
     color: #333;
     font-size: 1rem;
-    text-align: justify; /* 两端对齐，更整齐 */
+    text-align: justify;
   }
   
   /* 序号列 */
   .pub-num {
-    width: 45px; /* 固定宽度，确保所有序号占位一致 */
-    flex-shrink: 0; /* 禁止缩放 */
+    /* width: 45px;  <-- 【修改点】移除固定宽度 */
+    flex-shrink: 0;
     font-weight: bold;
-    color: #005AB5;
-    text-align: left; /* 序号左对齐或居中 */
+    color: #333; /* 【修改点】颜色改为黑色/深灰 */
   }
   
   /* 内容列 */
   .pub-content {
-    flex: 1; /* 占据剩余宽度 */
+    flex: 1;
   }
 
   /* ==========================================================================
@@ -134,9 +133,9 @@ redirect_from:
     .nav-item { padding: 8px 12px; font-size: 0.85rem; }
     #back-to-top { width: 45px; height: 45px; bottom: 20px; right: 20px; font-size: 18px; }
     
-    /* 移动端序号列稍微窄一点 */
-    .pub-num { width: 35px; }
-    ul.styled-list li::before { width: 25px; }
+    /* 移动端移除旧的宽度设置 */
+    /* .pub-num { width: 35px; }  <-- 已移除 */
+    /* ul.styled-list li::before { width: 25px; } <-- 已移除 */
   }
 </style>
 
