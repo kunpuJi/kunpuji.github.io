@@ -2,15 +2,15 @@
 <table border="0">
   <tr>
     <td width="20%">
-      <img src="/wqm1.png" width="100%">
+      <img src="/kunpuji.png" width="100%">
     </td>
     <td width="80%" align="center" valign="middle">
-      <h1><font color="#005AB5">Qunming Wang (王群明)</font></h1>
-      <b>Professor</b><br/>
-      <b>College of surveying and Geo-Informatics</b><br/>
-      <b>Tongji University</b><br/>
-      <b>1239 Siping Road, Shanghai 200092, China</b><br/>
-      <b>Email：wqm11111@126.com; wangqm@tongji.edu.cn</b><br/>
+      <h1><font color="#005AB5">Kunpu Ji (嵇昆浦)</font></h1>
+      <b>Postdoctoral researcher</b><br/>
+      <b>Department of Land Surveying and Geo-Informatics(LSGI)</b><br/>
+      <b>The Hong Kong Polytechnic University (PolyU)</b><br/>
+      <b>11 Yuk Choi Road, Hung Hom, Kowloon, Hong Kong</b><br/>
+      <b>Email：kunpu.ji@polyu.edu.hk; kunpuji@tongji.edu.cn; jkptongji@163.com</b><br/>
     </td>
   </tr>
 </table>
