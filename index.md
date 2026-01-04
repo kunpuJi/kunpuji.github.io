@@ -14,20 +14,16 @@ redirect_from:
 
 <style>
   /* ==========================================================================
-     0. 强制隐藏 Cayman 主题默认顶部
+     0. 基础清理
      ========================================================================== */
   .page-header { display: none !important; height: 0 !important; padding: 0 !important; margin: 0 !important; overflow: hidden !important; }
   .main-content { padding-top: 0 !important; margin-top: 0 !important; max-width: 100% !important; padding: 0 !important; }
-
-  /* ==========================================================================
-     1. 全局样式重置
-     ========================================================================== */
-  body { font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif !important; background-color: #fcfcfc; color: #333; scroll-behavior: smooth; }
+  body { font-family: 'Roboto', Arial, sans-serif !important; background-color: #fcfcfc; color: #333; scroll-behavior: smooth; }
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
   /* ==========================================================================
-     2. 顶部 Hero 区域 (全屏背景)
+     1. 顶部 Hero 区域
      ========================================================================== */
   .hero-wrapper {
     width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
@@ -38,27 +34,19 @@ redirect_from:
   }
 
   /* ==========================================================================
-     3. 个人信息卡片
+     2. 个人信息卡片
      ========================================================================== */
   .profile-card {
     background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); padding: 50px; border-radius: 16px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.2); max-width: 950px; width: 95%;
     display: flex; gap: 60px; align-items: center;
   }
-
-  /* 左侧头像容器 */
   .card-left { flex: 0 0 auto; display: flex; justify-content: center; align-items: center; }
-
-  /* 头像：瘦长椭圆 */
   .avatar-img {
-    width: 160px; height: 220px; 
-    border-radius: 50% / 50%; 
+    width: 160px; height: 220px; border-radius: 50% / 50%; 
     object-fit: cover; object-position: center 20%; 
-    border: 5px solid #fff; 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 5px solid #fff; box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   }
-
-  /* 右侧信息 */
   .card-right { flex: 1; text-align: left; }
   .my-name { font-size: 2.4rem; font-weight: 700; color: #005AB5; margin: 0 0 8px 0; line-height: 1.1; }
   .my-role { font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #eee; }
@@ -69,7 +57,7 @@ redirect_from:
   .social-btn:hover { background-color: #005AB5; color: #fff !important; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 90, 181, 0.3); }
 
   /* ==========================================================================
-     4. 导航栏
+     3. 导航栏
      ========================================================================== */
   .nav-wrapper { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100vw; margin-left: -50vw; left: 50%; position: relative; margin-bottom: 50px; display: flex; justify-content: center; }
   .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 1200px; }
@@ -77,54 +65,78 @@ redirect_from:
   .nav-item:hover { background-color: #eef4fb; color: #005AB5 !important; transform: translateY(-1px); }
 
   /* ==========================================================================
-     5. 正文样式
+     4. 正文样式 & 列表对齐优化 (Flexbox)
      ========================================================================== */
   .content-container { max-width: 1050px; margin: 0 auto; padding: 0 20px 60px 20px; }
+  
   h3 { font-size: 1.7rem; color: #222; border-left: 6px solid #005AB5; padding-left: 15px; margin-top: 60px; margin-bottom: 30px; font-weight: 700; }
-  ul.styled-list { padding-left: 20px; }
-  ul.styled-list li { margin-bottom: 12px; line-height: 1.7; color: #444; }
-  .pub-item { margin-bottom: 18px; text-align: justify; line-height: 1.7; padding-left: 1.8em; text-indent: -1.8em; color: #333; font-size: 1rem; }
   h4 { margin-top: 30px; margin-bottom: 15px; font-weight: 600; color: #555; border-bottom: 1px solid #eee; padding-bottom: 5px; }
 
-  /* ==========================================================================
-     6. 回到顶部按钮 (Back To Top Button)
-     ========================================================================== */
-  #back-to-top {
-    display: none; /* 默认隐藏 */
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1000;
-    width: 50px;
-    height: 50px;
-    border: none;
-    outline: none;
-    background-color: #005AB5; /* 你的主题蓝 */
-    color: white;
-    cursor: pointer;
-    border-radius: 50%; /* 圆形 */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    font-size: 20px;
-    transition: all 0.3s ease;
-    align-items: center;
-    justify-content: center;
+  /* 通用列表样式 (News, Education等) */
+  ul.styled-list { 
+    padding-left: 0; /* 移除默认内边距，完全自定义 */
+    list-style: none; /* 移除默认圆点 */
   }
-  
-  #back-to-top:hover {
-    background-color: #003d7a;
-    transform: translateY(-5px); /* 悬停上浮 */
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  ul.styled-list li { 
+    margin-bottom: 12px; 
+    line-height: 1.7; 
+    color: #444; 
+    display: flex; /* 使用 Flex 对齐 Bullet 和文字 */
+    align-items: baseline;
+  }
+  /* 自定义 Bullet，保证和下方论文序号对齐 */
+  ul.styled-list li::before {
+    content: "•"; /* 或者用 "\f111" FontAwesome */
+    color: #005AB5;
+    font-weight: bold;
+    display: inline-block;
+    width: 30px; /* 固定宽度，确保文字起始线一致 */
+    flex-shrink: 0;
+    text-align: center; /* 居中显示点 */
   }
 
-  /* 移动端适配 */
+  /* 论文列表样式 (关键修改：Flexbox 布局) */
+  .pub-item {
+    display: flex; /* 弹性盒子，实现左右分栏 */
+    align-items: baseline; /* 保证序号和第一行文字基线对齐 */
+    margin-bottom: 16px;
+    line-height: 1.7;
+    color: #333;
+    font-size: 1rem;
+    text-align: justify; /* 两端对齐，更整齐 */
+  }
+  
+  /* 序号列 */
+  .pub-num {
+    width: 45px; /* 固定宽度，确保所有序号占位一致 */
+    flex-shrink: 0; /* 禁止缩放 */
+    font-weight: bold;
+    color: #005AB5;
+    text-align: left; /* 序号左对齐或居中 */
+  }
+  
+  /* 内容列 */
+  .pub-content {
+    flex: 1; /* 占据剩余宽度 */
+  }
+
+  /* ==========================================================================
+     5. 回到顶部按钮
+     ========================================================================== */
+  #back-to-top { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000; width: 50px; height: 50px; border: none; outline: none; background-color: #005AB5; color: white; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-size: 20px; transition: all 0.3s ease; align-items: center; justify-content: center; }
+  #back-to-top:hover { background-color: #003d7a; transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+
   @media (max-width: 800px) {
     .profile-card { flex-direction: column; text-align: center; padding: 40px 20px; gap: 30px; }
     .card-right { text-align: center; }
     .my-info p { justify-content: center; }
     .social-group { justify-content: center; }
     .nav-item { padding: 8px 12px; font-size: 0.85rem; }
-    /* 移动端按钮稍微小一点，位置靠边一点 */
     #back-to-top { width: 45px; height: 45px; bottom: 20px; right: 20px; font-size: 18px; }
+    
+    /* 移动端序号列稍微窄一点 */
+    .pub-num { width: 35px; }
+    ul.styled-list li::before { width: 25px; }
   }
 </style>
 
@@ -173,63 +185,114 @@ redirect_from:
   <a name="News"></a>
   <h3>News</h3>
   <ul class="styled-list">
-    <li><b>12/2025:</b> A paper on geophysical time series filtering is accepted in <b>Surveys in Geophysics</b>. 
-    <li><b>11/2025:</b> A paper on improved SSA method is published in <b>Acta Geodynamica et Geomaterialia</b>. <a href="https://www2.irsm.cas.cz/index_en.php?page=acta_detail_doi&id=557" target="_blank">[Link]</a></li>
-    <li><b>10/2025:</b> A paper on wavelet filtering is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/11218160/" target="_blank">[Link]</a></li>
-    <li><b>10/2025:</b> A paper on Fourier filtering is published in <b>IEEE GPS Solutions</b>. <a href="https://link.springer.com/article/10.1007/s10291-025-01885-x" target="_blank">[Link]</a></li>
-    <li><b>01/2025:</b> A paper on regularization to ill-posed models is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/10836814" target="_blank">[Link]</a></li>
+    <li><span><b>12/2025:</b> A paper on geophysical time series filtering is accepted in <b>Surveys in Geophysics</b>.</span></li>
+    <li><span><b>11/2025:</b> A paper on improved SSA method is published in <b>Acta Geodynamica et Geomaterialia</b>. <a href="https://www2.irsm.cas.cz/index_en.php?page=acta_detail_doi&id=557" target="_blank">[Link]</a></span></li>
+    <li><span><b>10/2025:</b> A paper on wavelet filtering is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/11218160/" target="_blank">[Link]</a></span></li>
+    <li><span><b>10/2025:</b> A paper on Fourier filtering is published in <b>IEEE GPS Solutions</b>. <a href="https://link.springer.com/article/10.1007/s10291-025-01885-x" target="_blank">[Link]</a></span></li>
+    <li><span><b>01/2025:</b> A paper on regularization to ill-posed models is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/10836814" target="_blank">[Link]</a></span></li>
   </ul>
 
   <a name="Research"></a>
   <h3>Research Interests</h3>
   <ul class="styled-list">
-    <li>Geodetic data processing theory (Parameter estimation, VCE, Quality control, Time series analysis)</li>
-    <li>GNSS-based Hydrogeodesy</li>
-    <li>Filtering of GRACE time-variable gravity field solutions and related applications</li>
+    <li><span>Geodetic data processing theory (Parameter estimation, VCE, Quality control, Time series analysis)</span></li>
+    <li><span>GNSS-based Hydrogeodesy</span></li>
+    <li><span>Filtering of GRACE time-variable gravity field solutions and related applications</span></li>
   </ul>
 
   <a name="Education"></a>
   <h3>Education</h3>
   <ul class="styled-list">
-    <li><b>09/2021 – 05/2025:</b> Ph.D. in Geodesy, Tongji University, China</li>
-    <li><b>09/2017 – 06/2020:</b> M.S. in Surveying Engineering, Tongji University, China</li>
-    <li><b>09/2013 – 06/2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</li>
+    <li><span><b>09/2021 – 05/2025:</b> Ph.D. in Geodesy, Tongji University, China</span></li>
+    <li><span><b>09/2017 – 06/2020:</b> M.S. in Surveying Engineering, Tongji University, China</span></li>
+    <li><span><b>09/2013 – 06/2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</span></li>
   </ul>
 
   <a name="Experience"></a>
   <h3>Professional Experience</h3>
   <ul class="styled-list">
-    <li><b>10/2025 – Present:</b> Postdoctoral Research Fellow, The Hong Kong Polytechnic University (PolyU)</li>
-    <li><b>06/2025 – 09/2025:</b> Research Assistant, Tongji University, Shanghai</li>
-    <li><b>07/2020 – 07/2021:</b> Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc.</li>
+    <li><span><b>10/2025 – Present:</b> Postdoctoral Research Fellow, The Hong Kong Polytechnic University (PolyU)</span></li>
+    <li><span><b>06/2025 – 09/2025:</b> Research Assistant, Tongji University, Shanghai</span></li>
+    <li><span><b>07/2020 – 07/2021:</b> Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc.</span></li>
   </ul>
 
   <a name="Publications"></a>
-<h3>Publications</h3>
+  <h3>Publications</h3>
 
-<h4>2025</h4>
-<div class="pub-item">[6] <b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2025, 63: 1-19.</div>
-<div class="pub-item">[5] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. <b><i>GPS Solutions</i></b>, 2025, 29: 130.</div>
-<div class="pub-item">[4] <b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <b><i>Surveys in Geophysics</i></b>, 2025. (Accepted)</div>
-<div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang, et al. An Efficient Improved Singular Spectrum Analysis for Processing GNSS Position Time Series with Missing Data. <b><i>Geophysical Journal International</i></b>, 2025, 240(1): 189-200.</div>
-<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. A Recursive Regularized Solution to Geophysical Linear Ill-Posed Inverse Problems. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2025, 63: 1-14.</div>
-<div class="pub-item">[1] <b>K. Ji</b>, F. Wang. Some New Insights into Efficient ISSA for Processing Incomplete Geodetic Time Series. <b><i>Acta Geodynamica et Geomaterialia</i></b>, 2025, 22(4): 531-544.</div>
+  <h4>2025</h4>
+  <div class="pub-item">
+    <div class="pub-num">[6]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2025, 63: 1-19.</div>
+  </div>
 
-<h4>2024</h4>
-<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, F. Wang, Q. Chen, L. Zhang. Extended Multiresolution Analysis for Filtering Incomplete Heterogeneous Geophysical Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2024, 62: 1-13.</div>
-<div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中, 陈秋杰. GRACE时变重力场模型的自适应正则化滤波方法. <b><i>武汉大学学报(信息科学版)</i></b>, 2024, 49(11): 2101-2112.</div>
+  <div class="pub-item">
+    <div class="pub-num">[5]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. <b><i>GPS Solutions</i></b>, 2025, 29: 130.</div>
+  </div>
 
-<h4>2023</h4>
-<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, Q. Chen, F. Wang. Extended Singular Spectrum Analysis for Processing Incomplete Heterogeneous Geodetic Time Series. <b><i>Journal of Geodesy</i></b>, 2023, 97(8): 74.</div>
-<div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, T. Feng. Extended Principal Component Analysis for Spatiotemporal Filtering of Incomplete Heterogeneous GNSS Position Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2023, 61: 1-19.</div>
+  <div class="pub-item">
+    <div class="pub-num">[4]</div>
+    <div class="pub-content"><b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <b><i>Surveys in Geophysics</i></b>, 2025. (Accepted)</div>
+  </div>
 
-<h4>2022</h4>
-<div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, B. Li, W. Wang. An Adaptive Regularized Solution to Inverse Ill-posed Models. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2022, 60: 1-15.</div>
+  <div class="pub-item">
+    <div class="pub-num">[3]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, F. Wang, et al. An Efficient Improved Singular Spectrum Analysis for Processing GNSS Position Time Series with Missing Data. <b><i>Geophysical Journal International</i></b>, 2025, 240(1): 189-200.</div>
+  </div>
 
-<h4>2020</h4>
-<div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang. Signal Extraction from GNSS Position Time Series Using Weighted Wavelet Analysis. <b><i>Remote Sensing</i></b>, 2020, 12.</div>
-<div class="pub-item">[2] <b>嵇昆浦</b>, 沈云中. 含缺值GNSS基准站坐标序列的非插值小波分析与信号提取. <b><i>测绘学报</i></b>, 2020, 49(05).</div>
-<div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中. TSVD正则化解法的单位权方差无偏估计. <b><i>武汉大学学报(信息科学版)</i></b>, 2020, 45(04).</div>
+  <div class="pub-item">
+    <div class="pub-num">[2]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. A Recursive Regularized Solution to Geophysical Linear Ill-Posed Inverse Problems. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2025, 63: 1-14.</div>
+  </div>
+
+  <div class="pub-item">
+    <div class="pub-num">[1]</div>
+    <div class="pub-content"><b>K. Ji</b>, F. Wang. Some New Insights into Efficient ISSA for Processing Incomplete Geodetic Time Series. <b><i>Acta Geodynamica et Geomaterialia</i></b>, 2025, 22(4): 531-544.</div>
+  </div>
+
+  <h4>2024</h4>
+  <div class="pub-item">
+    <div class="pub-num">[2]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, F. Wang, Q. Chen, L. Zhang. Extended Multiresolution Analysis for Filtering Incomplete Heterogeneous Geophysical Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2024, 62: 1-13.</div>
+  </div>
+
+  <div class="pub-item">
+    <div class="pub-num">[1]</div>
+    <div class="pub-content"><b>嵇昆浦</b>, 沈云中, 陈秋杰. GRACE时变重力场模型的自适应正则化滤波方法. <b><i>武汉大学学报(信息科学版)</i></b>, 2024, 49(11): 2101-2112.</div>
+  </div>
+
+  <h4>2023</h4>
+  <div class="pub-item">
+    <div class="pub-num">[2]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, Q. Chen, F. Wang. Extended Singular Spectrum Analysis for Processing Incomplete Heterogeneous Geodetic Time Series. <b><i>Journal of Geodesy</i></b>, 2023, 97(8): 74.</div>
+  </div>
+
+  <div class="pub-item">
+    <div class="pub-num">[1]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, Q. Chen, T. Feng. Extended Principal Component Analysis for Spatiotemporal Filtering of Incomplete Heterogeneous GNSS Position Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2023, 61: 1-19.</div>
+  </div>
+
+  <h4>2022</h4>
+  <div class="pub-item">
+    <div class="pub-num">[1]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, Q. Chen, B. Li, W. Wang. An Adaptive Regularized Solution to Inverse Ill-posed Models. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2022, 60: 1-15.</div>
+  </div>
+
+  <h4>2020</h4>
+  <div class="pub-item">
+    <div class="pub-num">[3]</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, F. Wang. Signal Extraction from GNSS Position Time Series Using Weighted Wavelet Analysis. <b><i>Remote Sensing</i></b>, 2020, 12.</div>
+  </div>
+
+  <div class="pub-item">
+    <div class="pub-num">[2]</div>
+    <div class="pub-content"><b>嵇昆浦</b>, 沈云中. 含缺值GNSS基准站坐标序列的非插值小波分析与信号提取. <b><i>测绘学报</i></b>, 2020, 49(05).</div>
+  </div>
+
+  <div class="pub-item">
+    <div class="pub-num">[1]</div>
+    <div class="pub-content"><b>嵇昆浦</b>, 沈云中. TSVD正则化解法的单位权方差无偏估计. <b><i>武汉大学学报(信息科学版)</i></b>, 2020, 45(04).</div>
+  </div>
 
   <a name="Codes"></a>
   <h3>Codes</h3>
@@ -246,20 +309,20 @@ redirect_from:
   <h3>Professional Service</h3>
   <p><b>Journal Reviewer:</b></p>
   <ul class="styled-list">
-    <li>Advances in Space Research</li>
-    <li>Journal of Geodesy</li>
+    <li><span>Advances in Space Research</span></li>
+    <li><span>Journal of Geodesy</span></li>
   </ul>
 
   <a name="Awards"></a>
   <h3>Awards & Honors</h3>
   <ul class="styled-list">
-    <li><b>2025:</b> Excellent Doctoral Dissertation of Tongji University (Top 2)</li>
-    <li><b>2025:</b> Outstanding Graduate of Tongji University</li>
-    <li><b>2024:</b> China Scholarship Council (CSC) Scholarship</li>
-    <li><b>2023:</b> National Scholarship for Doctoral Students</li>
-    <li><b>2023:</b> Outstanding Student of Tongji University</li>
-    <li><b>2020:</b> Excellent Master's Dissertation of Tongji University (Top 2)</li>
-    <li><b>2018:</b> Second Prize, The 15th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling</li>
+    <li><span><b>2025:</b> Excellent Doctoral Dissertation of Tongji University (Top 2)</span></li>
+    <li><span><b>2025:</b> Outstanding Graduate of Tongji University</span></li>
+    <li><span><b>2024:</b> China Scholarship Council (CSC) Scholarship</span></li>
+    <li><span><b>2023:</b> National Scholarship for Doctoral Students</span></li>
+    <li><span><b>2023:</b> Outstanding Student of Tongji University</span></li>
+    <li><span><b>2020:</b> Excellent Master's Dissertation of Tongji University (Top 2)</span></li>
+    <li><span><b>2018:</b> Second Prize, The 15th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling</span></li>
   </ul>
 
 </div>
@@ -269,22 +332,15 @@ redirect_from:
 </button>
 
 <script>
-  // 获取按钮
   var mybutton = document.getElementById("back-to-top");
-
-  // 监听滚动
   window.onscroll = function() {scrollFunction()};
-
   function scrollFunction() {
-    // 滚动超过 300px 显示按钮
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      mybutton.style.display = "flex"; // 使用 flex 让图标居中
+      mybutton.style.display = "flex";
     } else {
       mybutton.style.display = "none";
     }
   }
-
-  // 点击平滑滚动回顶部
   mybutton.onclick = function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
