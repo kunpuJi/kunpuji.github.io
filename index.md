@@ -1,328 +1,300 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunpu Ji - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* --- 全局设置 --- */
-        :root {
-            --primary-color: #005AB5; /* 你喜欢的深蓝色 */
-            --text-color: #333;
-            --bg-grey: #f9f9f9;
-            --card-bg: rgba(255, 255, 255, 0.95); /* 卡片半透明背景 */
-        }
+---
+permalink: /
+title: "About Me"
+excerpt: "About Me"
+author_profile: false
+classes: wide
+redirect_from: 
+  - /about/
+  - /about.html
+---
 
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-grey);
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        a {
-            text-decoration: none;
-            color: var(--primary-color);
-            transition: color 0.3s;
-        }
+<style>
+  /* ==========================================================================
+     核心布局：强制突破容器限制，实现全屏背景
+     ========================================================================== */
+  .full-width-header {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-image: url('/images/polyu_bg.jpg'); /* 【请修改这里：背景图片路径】 */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 40, 85, 0.3); /* 叠加一层深蓝色遮罩，让文字更清晰 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-        a:hover {
-            color: #003d7a;
-        }
+  /* ==========================================================================
+     个人信息悬浮卡片 (仿 Jun CEN 风格)
+     ========================================================================== */
+  .profile-card {
+    background: rgba(255, 255, 255, 0.95); /* 半透明白色背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+  }
 
-        /* --- 顶部 Banner 和个人信息卡片区域 --- */
-        .hero-banner {
-            /* 【重要】请在这里替换成香港理工大学的背景图路径 */
-            background-image: url('polyu_bg.jpg'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 60px 20px; /* 上下留白，给卡片空间 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 350px; /* 保证最小高度 */
-        }
+  /* 头像样式 */
+  .profile-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    margin-top: -80px; /* 让头像只有一半在卡片内，一半突出在上面，增加层次感 */
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
 
-        .profile-card {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 20px; /* 圆角 */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* 柔和的阴影 */
-            text-align: center;
-            max-width: 700px;
-            width: 100%;
-            backdrop-filter: blur(5px); /* 可选：背景毛玻璃效果，增加高级感 */
-        }
+  /* 名字与职位 */
+  .profile-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #005AB5; /* PolyU Blue */
+    margin-bottom: 5px;
+  }
+  .profile-role {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .profile-dept {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
 
-        .profile-avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* 圆形头像 */
-            object-fit: cover;
-            border: 4px solid #fff; /* 头像白边 */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            /* 如果想让头像突破卡片上边缘，可以取消下面两行的注释 */
-            /* margin-top: -90px; */
-            /* z-index: 10; */
-        }
+  /* 社交链接按钮栏 */
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+  .social-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f0f4f8;
+    color: #005AB5;
+    border-radius: 20px;
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .social-btn i { margin-right: 6px; }
+  .social-btn:hover {
+    background-color: #005AB5;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,90,181,0.3);
+  }
 
-        .profile-name {
-            color: var(--primary-color);
-            margin: 10px 0;
-            font-size: 2.2em;
-            font-weight: 700;
-        }
+  /* ==========================================================================
+     导航栏样式 (整洁的横向菜单)
+     ========================================================================== */
+  .custom-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .custom-nav a {
+    color: #444;
+    text-decoration: none !important;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .custom-nav a:hover {
+    background-color: #eef2f6;
+    color: #005AB5;
+  }
+  .custom-nav a.active {
+    background-color: #eef2f6;
+    color: #005AB5;
+    font-weight: bold;
+  }
 
-        .profile-info {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 15px;
-        }
+  /* ==========================================================================
+     内容区域修正
+     ========================================================================== */
+  h3 {
+    border-left: 5px solid #005AB5;
+    padding-left: 12px;
+    margin-top: 40px;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  /* 列表优化 */
+  ul.styled-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* 论文列表间距 */
+  .pub-item {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
 
-        .profile-contact {
-            font-size: 0.95em;
-            color: #777;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-            margin-top: 15px;
-        }
+  /* 针对移动端的微调 */
+  @media (max-width: 768px) {
+    .full-width-header { padding: 40px 15px; }
+    .profile-card { padding: 20px; }
+    .profile-avatar { width: 120px; height: 120px; margin-top: -60px; }
+    .profile-name { font-size: 1.8rem; }
+  }
+</style>
 
-        /* --- 导航栏 --- */
-        .nav-bar-container {
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            padding: 15px 0;
-            position: sticky; /* 可选：让导航栏吸顶 */
-            top: 0;
-            z-index: 100;
-        }
+<div class="full-width-header">
+  <div class="profile-card">
+    <img src="/images/kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
+    
+    <div class="profile-name">Kunpu Ji (嵇昆浦)</div>
+    <div class="profile-role">Postdoctoral Researcher</div>
+    
+    <div class="profile-dept">
+      Department of Land Surveying and Geo-Informatics (LSGI)<br>
+      The Hong Kong Polytechnic University (PolyU)
+    </div>
 
-        .nav-bar {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    <div style="font-size: 0.9rem; color: #666;">
+      <i class="fas fa-map-marker-alt" style="color:#005AB5"></i> 11 Yuk Choi Road, Hung Hom, Kowloon, Hong Kong
+    </div>
 
-        .nav-bar a {
-            font-weight: 500;
-            font-size: 1.05em;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+    <div class="social-buttons">
+      <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" class="social-btn"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Qunming_Wang" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
+      <a href="https://github.com/your-github-id" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</div>
 
-        .nav-bar a:hover {
-            background-color: #f0f5ff; /* 鼠标悬停时的浅蓝色背景 */
-        }
+<nav class="custom-nav">
+  <a href="#News">News</a>
+  <a href="#Research">Research Interests</a>
+  <a href="#Education">Education</a>
+  <a href="#Experience">Experience</a>
+  <a href="#Publications">Publications</a>
+  <a href="#Codes">Codes</a>
+  <a href="#Datasets">Datasets</a>
+  <a href="#Professional">Services</a>
+  <a href="#Awards">Awards</a>
+</nav>
 
-        /* --- 主体内容区域 --- */
-        .container {
-            max-width: 1000px; /* 控制下方内容的最大宽度，实现对齐 */
-            margin: 40px auto; /* 居中且上下留白 */
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.03);
-        }
+<a name="News"></a>
+<h3>News</h3>
+<ul class="styled-list">
+  <li><b>10/2025:</b> A paper on soil moisture data reconstruction is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425725002457">[Link]</a></li>
+  <li><b>03/2025:</b> A paper on subpixel mapping is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425724005406">[Link]</a></li>
+  <li><b>05/2024:</b> A paper on Landsat LST gap filling is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425724001536">[Link]</a></li>
+  <li><b>06/2023:</b> A paper on 30 m young forest age in China is accepted by <b>ESSD</b>.</li>
+  <li><b>03/2022:</b> A paper on haze removal is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425722001262">[Link]</a></li>
+</ul>
 
-        /* --- 内容样式优化 --- */
-        h3 {
-            color: #222;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-            margin-top: 40px;
-            font-size: 1.5em;
-        }
-        /* 让第一个标题顶部没有间距 */
-        h3:first-of-type {
-            margin-top: 0;
-        }
+<a name="Research"></a>
+<h3>Research Interests</h3>
+<ul class="styled-list">
+  <li>Geodetic data processing theory (Parameter estimation, VCE, Quality control, Time series analysis)</li>
+  <li>GNSS-based Hydrogeodesy</li>
+  <li>Filtering of GRACE time-variable gravity field solutions and related applications</li>
+</ul>
 
-        h4 {
-            color: #555;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 1.2em;
-        }
+<a name="Education"></a>
+<h3>Education</h3>
+<ul class="styled-list">
+  <li><b>09/2021 – 05/2025:</b> Ph.D. in Geodesy, Tongji University, China</li>
+  <li><b>09/2017 – 06/2020:</b> M.S. in Surveying Engineering, Tongji University, China</li>
+  <li><b>09/2013 – 06/2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</li>
+</ul>
 
-        ul {
-            padding-left: 20px;
-        }
+<a name="Experience"></a>
+<h3>Professional Experience</h3>
+<ul class="styled-list">
+  <li><b>10/2025 – Present:</b> Postdoctoral Research Fellow, The Hong Kong Polytechnic University (PolyU)</li>
+  <li><b>06/2025 – 09/2025:</b> Research Assistant, Tongji University, Shanghai</li>
+  <li><b>07/2020 – 07/2021:</b> Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc.</li>
+</ul>
 
-        li {
-            margin-bottom: 10px;
-        }
-        
-        /* 专门针对 News 列表的样式优化，让日期和内容对齐更好看 */
-        .news-list li {
-            display: grid;
-            grid-template-columns: 90px 1fr;
-            gap: 10px;
-            align-items: baseline;
-        }
-        .news-date {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
+<a name="Publications"></a>
+<h3>Publications</h3>
 
-        .publication-item {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        /* 占位符样式 */
-        .placeholder {
-            color: #999;
-            font-style: italic;
-            padding: 20px;
-            background: #f4f4f4;
-            border-radius: 8px;
-            text-align: center;
-        }
+<h4>2025</h4>
+<div class="pub-item">[6] <b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2025, 63: 1-19.</div>
+<div class="pub-item">[5] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. <i>GPS Solutions</i>, 2025, 29: 130.</div>
+<div class="pub-item">[4] <b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <i>Surveys in Geophysics</i>, 2025. (Accepted)</div>
+<div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang, et al. An Efficient Improved Singular Spectrum Analysis for Processing GNSS Position Time Series with Missing Data. <i>Geophysical Journal International</i>, 2025, 240(1): 189-200.</div>
+<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. A Recursive Regularized Solution to Geophysical Linear Ill-Posed Inverse Problems. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2025, 63: 1-14.</div>
+<div class="pub-item">[1] <b>K. Ji</b>, F. Wang. Some New Insights into Efficient ISSA for Processing Incomplete Geodetic Time Series. <i>Acta Geodynamica et Geomaterialia</i>, 2025, 22(4): 531-544.</div>
 
-    </style>
-</head>
-<body>
+<h4>2024</h4>
+<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, F. Wang, Q. Chen, L. Zhang. Extended Multiresolution Analysis for Filtering Incomplete Heterogeneous Geophysical Time Series. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2024, 62: 1-13.</div>
+<div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中, 陈秋杰. GRACE时变重力场模型的自适应正则化滤波方法. <i>武汉大学学报(信息科学版)</i>, 2024, 49(11): 2101-2112.</div>
 
-    <header class="hero-banner">
-        <div class="profile-card">
-            <img src="kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
-            <h1 class="profile-name">Kunpu Ji (嵇昆浦)</h1>
-            <div class="profile-info">
-                <b>Postdoctoral Researcher</b><br/>
-                Department of Land Surveying and Geo-Informatics (LSGI)<br/>
-                The Hong Kong Polytechnic University (PolyU)<br/>
-            </div>
-            <div class="profile-contact">
-                <b>Email:</b> kunpu.ji@polyu.edu.hk | kunpuji@tongji.edu.cn | jkptongji@163.com<br/>
-                <b>Address:</b> 11 Yuk Choi Road, Hung Hom, Kowloon, Hong Kong
-            </div>
-        </div>
-    </header>
+<h4>2023</h4>
+<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, Q. Chen, F. Wang. Extended Singular Spectrum Analysis for Processing Incomplete Heterogeneous Geodetic Time Series. <i>Journal of Geodesy</i>, 2023, 97(8): 74.</div>
+<div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, T. Feng. Extended Principal Component Analysis for Spatiotemporal Filtering of Incomplete Heterogeneous GNSS Position Time Series. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2023, 61: 1-19.</div>
 
-    <nav class="nav-bar-container">
-        <div class="nav-bar">
-            <a href="#News">News</a>
-            <a href="#Research">Research Interests</a>
-            <a href="#Education">Education</a>
-            <a href="#Experience">Professional Experience</a>
-            <a href="#Publications">Publications</a>
-            <a href="#Codes">Codes</a>
-            <a href="#Datasets">Datasets</a>
-            <a href="#Professional">Professional Service</a>
-            <a href="#Awards">Awards & Honors</a>
-        </div>
-    </nav>
+<h4>2022</h4>
+<div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, B. Li, W. Wang. An Adaptive Regularized Solution to Inverse Ill-posed Models. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2022, 60: 1-15.</div>
 
-    <main class="container">
+<h4>2020</h4>
+<div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang. Signal Extraction from GNSS Position Time Series Using Weighted Wavelet Analysis. <i>Remote Sensing</i>, 2020, 12.</div>
+<div class="pub-item">[2] <b>嵇昆浦</b>, 沈云中. 含缺值GNSS基准站坐标序列的非插值小波分析与信号提取. <i>测绘学报</i>, 2020, 49(05).</div>
+<div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中. TSVD正则化解法的单位权方差无偏估计. <i>武汉大学学报(信息科学版)</i>, 2020, 45(04).</div>
 
-        <a name="News"></a>
-        <h3>News</h3>
-        <ul class="news-list">
-            <li>
-                <span class="news-date">10/2025</span>
-                <span>A paper on soil moisture data reconstruction is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425725002457">[Link]</a></span>
-            </li>
-            <li>
-                <span class="news-date">03/2025</span>
-                <span>A paper on subpixel mapping is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425724005406">[Link]</a></span>
-            </li>
-            <li>
-                <span class="news-date">05/2024</span>
-                <span>A paper on Landsat LST gap filling is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425724001536">[Link]</a></span>
-            </li>
-            <li>
-                <span class="news-date">06/2023</span>
-                <span>A paper on 30 m young forest age in China is accepted by <b>ESSD</b>.</span>
-            </li>
-            <li>
-                <span class="news-date">03/2022</span>
-                <span>A paper on haze removal is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425722001262">[Link]</a></span>
-            </li>
-        </ul>
+<a name="Codes"></a>
+<h3>Codes</h3>
+<p style="color: #666; font-style: italic;">Codes will be uploaded soon...</p>
 
-        <a name="Research"></a>
-        <h3>Research Interests</h3>
-        <ul>
-            <li>Geodetic data processing theory, including parameter estimation, variance component estimation (VCE), quality control, and time series analysis</li>
-            <li>GNSS-based hydrogeodesy</li>
-            <li>Filtering of GRACE time-variable gravity field solutions and related applications</li>
-        </ul>
+<a name="Datasets"></a>
+<h3>Datasets</h3>
+<p>
+  <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785">[Data Link]</a><br>
+  <span style="font-size: 0.9em; color: #555;">J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.</span>
+</p>
 
-        <a name="Education"></a>
-        <h3>Education</h3>
-        <ul>
-            <li>09/2021 – 05/2025 &nbsp;&nbsp; <b>Ph.D.</b> in Geodesy, Tongji University, China</li>
-            <li>09/2017 – 06/2020 &nbsp;&nbsp; <b>M.S.</b> in Surveying Engineering, Tongji University, China</li>
-            <li>09/2013 – 06/2017 &nbsp;&nbsp; <b>B.S.</b> in Surveying Engineering, Nanjing Tech University, China</li>
-        </ul>
+<a name="Professional"></a>
+<h3>Professional Service</h3>
+<p><b>Journal Reviewer:</b></p>
+<ul class="styled-list">
+  <li>Advances in Space Research</li>
+  <li>Journal of Geodesy</li>
+</ul>
 
-        <a name="Experience"></a>
-        <h3>Professional Experience</h3>
-        <ul>
-            <li>10/2025 – Present &nbsp;&nbsp; Postdoctoral Research Fellow, Department of Land Surveying and Geo-Informatics, The Hong Kong Polytechnic University, Hong Kong, China</li>
-            <li>06/2025 – 09/2025 &nbsp;&nbsp; Research Assistant, College of Surveying and Geo-informatics, Tongji University, Shanghai, China</li>
-            <li>07/2020 – 07/2021 &nbsp;&nbsp; Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc., Shanghai, China</li>
-        </ul>
-
-        <a name="Publications"></a>
-        <h3>Publications</h3>
-        <p>
-            Google Scholar: <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank">[Link]</a> &nbsp;|&nbsp; 
-            ResearchGate: <a href="https://www.researchgate.net/profile/Qunming_Wang" target="_blank">[Link]</a>
-        </p>
-
-        <h4>2025</h4>
-        <div class="publication-item">[6] <b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. ***IEEE Transactions on Geoscience and Remote Sensing***, 2025, 63: 1-19.</div>
-        <div class="publication-item">[5] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. ***GPS Solutions***, 2025, 29: 130.</div>
-        <div class="publication-item">[1] <b>K. Ji</b>, F. Wang. Some New Insights into Efficient ISSA for Processing Incomplete Geodetic Time Series. ***Acta Geodynamica et Geomaterialia***, 2025, 22(4): 531-544.</div>
-
-        <h4>2024</h4>
-        <div class="publication-item">[2] <b>K. Ji</b>, Y. Shen, F. Wang, Q. Chen, L. Zhang. Extended Multiresolution Analysis for Filtering Incomplete Heterogeneous Geophysical Time Series. ***IEEE Transactions on Geoscience and Remote Sensing***, 2024, 62: 1-13.</div>
-        <div class="publication-item">[1] <b>嵇昆浦</b>, 沈云中, 陈秋杰. GRACE时变重力场模型的自适应正则化滤波方法. ***武汉大学学报(信息科学版)***, 2024, 49(11): 2101-2112.</div>
-        
-        <a name="Codes"></a>
-        <h3>Codes</h3>
-        <div class="placeholder">
-            Content coming soon...
-        </div>
-
-        <a name="Datasets"></a>
-        <h3>Datasets</h3>
-        <p>
-            <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> &nbsp;(<a href="https://doi.org/10.5281/zenodo.11918785" target="_blank">https://doi.org/10.5281/zenodo.11918785</a>)<br/>
-            J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.
-        </p>
-
-        <a name="Professional"></a>
-        <h3>Professional Service</h3>
-        <h4>Journal Reviewer</h4>
-        <ul>
-            <li>Advances in Space Research</li>
-            <li>Journal of Geodesy</li>
-        </ul>
-
-        <a name="Awards"></a>
-        <h3>Awards & Honors</h3>
-        <ul>
-            <li>2025: Excellent Doctoral Dissertation of Tongji University (Top 2 in the major)</li>
-            <li>2025: Outstanding Graduate of Tongji University</li>
-            <li>2024: China Scholarship Council (CSC) Scholarship</li>
-            <li>2023: National Scholarship for Doctoral Students (Ministry of Education of China)</li>
-            <li>2023: Outstanding Student of Tongji University</li>
-            <li>2020: Excellent Master's Dissertation of Tongji University (Top 2 in the major)</li>
-            <li>2018: Second Prize, The 15th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling</li>
-        </ul>
-
-    </main>
-
-</body>
-</html>
+<a name="Awards"></a>
+<h3>Awards & Honors</h3>
+<ul class="styled-list">
+  <li><b>2025:</b> Excellent Doctoral Dissertation of Tongji University (Top 2)</li>
+  <li><b>2025:</b> Outstanding Graduate of Tongji University</li>
+  <li><b>2024:</b> China Scholarship Council (CSC) Scholarship</li>
+  <li><b>2023:</b> National Scholarship for Doctoral Students</li>
+  <li><b>2023:</b> Outstanding Student of Tongji University</li>
+  <li><b>2020:</b> Excellent Master's Dissertation of Tongji University (Top 2)</li>
+  <li><b>2018:</b> Second Prize, The 15th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling</li>
+</ul>
