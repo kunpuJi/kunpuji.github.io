@@ -173,11 +173,11 @@ redirect_from:
   <a name="News"></a>
   <h3>News</h3>
   <ul class="styled-list">
-    <li><b>10/2025:</b> A paper on soil moisture data reconstruction is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425725002457" target="_blank">[Link]</a></li>
-    <li><b>03/2025:</b> A paper on subpixel mapping is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425724005406" target="_blank">[Link]</a></li>
-    <li><b>05/2024:</b> A paper on Landsat LST gap filling is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425724001536" target="_blank">[Link]</a></li>
-    <li><b>06/2023:</b> A paper on 30 m young forest age in China is accepted by <b>ESSD</b>.</li>
-    <li><b>03/2022:</b> A paper on haze removal is published in <b>RSE</b>. <a href="https://www.sciencedirect.com/science/article/pii/S0034425722001262" target="_blank">[Link]</a></li>
+    <li><b>12/2025:</b> A paper on geophysical time series filtering is accepted in <b>Surveys in Geophysics</b>. 
+    <li><b>11/2025:</b> A paper on improved SSA method is published in <b>Acta Geodynamica et Geomaterialia</b>. <a href="https://www2.irsm.cas.cz/index_en.php?page=acta_detail_doi&id=557" target="_blank">[Link]</a></li>
+    <li><b>10/2025:</b> A paper on wavelet filtering is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/11218160/" target="_blank">[Link]</a></li>
+    <li><b>10/2025:</b> A paper on Fourier filtering is published in <b>IEEE GPS Solutions</b>. <a href="https://link.springer.com/article/10.1007/s10291-025-01885-x" target="_blank">[Link]</a></li>
+    <li><b>01/2025:</b> A paper on regularization to ill-posed models is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/10836814" target="_blank">[Link]</a></li>
   </ul>
 
   <a name="Research"></a>
@@ -205,31 +205,31 @@ redirect_from:
   </ul>
 
   <a name="Publications"></a>
-  <h3>Publications</h3>
+<h3>Publications</h3>
 
-  <h4>2025</h4>
-  <div class="pub-item">[6] <b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2025, 63: 1-19.</div>
-  <div class="pub-item">[5] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. <i>GPS Solutions</i>, 2025, 29: 130.</div>
-  <div class="pub-item">[4] <b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <i>Surveys in Geophysics</i>, 2025. (Accepted)</div>
-  <div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang, et al. An Efficient Improved Singular Spectrum Analysis for Processing GNSS Position Time Series with Missing Data. <i>Geophysical Journal International</i>, 2025, 240(1): 189-200.</div>
-  <div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. A Recursive Regularized Solution to Geophysical Linear Ill-Posed Inverse Problems. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2025, 63: 1-14.</div>
-  <div class="pub-item">[1] <b>K. Ji</b>, F. Wang. Some New Insights into Efficient ISSA for Processing Incomplete Geodetic Time Series. <i>Acta Geodynamica et Geomaterialia</i>, 2025, 22(4): 531-544.</div>
+<h4>2025</h4>
+<div class="pub-item">[6] <b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2025, 63: 1-19.</div>
+<div class="pub-item">[5] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. <b><i>GPS Solutions</i></b>, 2025, 29: 130.</div>
+<div class="pub-item">[4] <b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <b><i>Surveys in Geophysics</i></b>, 2025. (Accepted)</div>
+<div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang, et al. An Efficient Improved Singular Spectrum Analysis for Processing GNSS Position Time Series with Missing Data. <b><i>Geophysical Journal International</i></b>, 2025, 240(1): 189-200.</div>
+<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. A Recursive Regularized Solution to Geophysical Linear Ill-Posed Inverse Problems. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2025, 63: 1-14.</div>
+<div class="pub-item">[1] <b>K. Ji</b>, F. Wang. Some New Insights into Efficient ISSA for Processing Incomplete Geodetic Time Series. <b><i>Acta Geodynamica et Geomaterialia</i></b>, 2025, 22(4): 531-544.</div>
 
-  <h4>2024</h4>
-  <div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, F. Wang, Q. Chen, L. Zhang. Extended Multiresolution Analysis for Filtering Incomplete Heterogeneous Geophysical Time Series. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2024, 62: 1-13.</div>
-  <div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中, 陈秋杰. GRACE时变重力场模型的自适应正则化滤波方法. <i>武汉大学学报(信息科学版)</i>, 2024, 49(11): 2101-2112.</div>
+<h4>2024</h4>
+<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, F. Wang, Q. Chen, L. Zhang. Extended Multiresolution Analysis for Filtering Incomplete Heterogeneous Geophysical Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2024, 62: 1-13.</div>
+<div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中, 陈秋杰. GRACE时变重力场模型的自适应正则化滤波方法. <b><i>武汉大学学报(信息科学版)</i></b>, 2024, 49(11): 2101-2112.</div>
 
-  <h4>2023</h4>
-  <div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, Q. Chen, F. Wang. Extended Singular Spectrum Analysis for Processing Incomplete Heterogeneous Geodetic Time Series. <i>Journal of Geodesy</i>, 2023, 97(8): 74.</div>
-  <div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, T. Feng. Extended Principal Component Analysis for Spatiotemporal Filtering of Incomplete Heterogeneous GNSS Position Time Series. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2023, 61: 1-19.</div>
+<h4>2023</h4>
+<div class="pub-item">[2] <b>K. Ji</b>, Y. Shen, Q. Chen, F. Wang. Extended Singular Spectrum Analysis for Processing Incomplete Heterogeneous Geodetic Time Series. <b><i>Journal of Geodesy</i></b>, 2023, 97(8): 74.</div>
+<div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, T. Feng. Extended Principal Component Analysis for Spatiotemporal Filtering of Incomplete Heterogeneous GNSS Position Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2023, 61: 1-19.</div>
 
-  <h4>2022</h4>
-  <div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, B. Li, W. Wang. An Adaptive Regularized Solution to Inverse Ill-posed Models. <i>IEEE Transactions on Geoscience and Remote Sensing</i>, 2022, 60: 1-15.</div>
+<h4>2022</h4>
+<div class="pub-item">[1] <b>K. Ji</b>, Y. Shen, Q. Chen, B. Li, W. Wang. An Adaptive Regularized Solution to Inverse Ill-posed Models. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2022, 60: 1-15.</div>
 
-  <h4>2020</h4>
-  <div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang. Signal Extraction from GNSS Position Time Series Using Weighted Wavelet Analysis. <i>Remote Sensing</i>, 2020, 12.</div>
-  <div class="pub-item">[2] <b>嵇昆浦</b>, 沈云中. 含缺值GNSS基准站坐标序列的非插值小波分析与信号提取. <i>测绘学报</i>, 2020, 49(05).</div>
-  <div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中. TSVD正则化解法的单位权方差无偏估计. <i>武汉大学学报(信息科学版)</i>, 2020, 45(04).</div>
+<h4>2020</h4>
+<div class="pub-item">[3] <b>K. Ji</b>, Y. Shen, F. Wang. Signal Extraction from GNSS Position Time Series Using Weighted Wavelet Analysis. <b><i>Remote Sensing</i></b>, 2020, 12.</div>
+<div class="pub-item">[2] <b>嵇昆浦</b>, 沈云中. 含缺值GNSS基准站坐标序列的非插值小波分析与信号提取. <b><i>测绘学报</i></b>, 2020, 49(05).</div>
+<div class="pub-item">[1] <b>嵇昆浦</b>, 沈云中. TSVD正则化解法的单位权方差无偏估计. <b><i>武汉大学学报(信息科学版)</i></b>, 2020, 45(04).</div>
 
   <a name="Codes"></a>
   <h3>Codes</h3>
