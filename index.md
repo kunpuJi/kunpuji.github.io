@@ -16,28 +16,13 @@ redirect_from:
   /* ==========================================================================
      0. 强制隐藏 Cayman 主题默认顶部
      ========================================================================== */
-  .page-header {
-    display: none !important;
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-  }
-  .main-content {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-    max-width: 100% !important;
-    padding: 0 !important;
-  }
+  .page-header { display: none !important; height: 0 !important; padding: 0 !important; margin: 0 !important; overflow: hidden !important; }
+  .main-content { padding-top: 0 !important; margin-top: 0 !important; max-width: 100% !important; padding: 0 !important; }
 
   /* ==========================================================================
      1. 全局样式重置
      ========================================================================== */
-  body {
-    font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif !important;
-    background-color: #fcfcfc;
-    color: #333;
-  }
+  body { font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif !important; background-color: #fcfcfc; color: #333; }
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
@@ -45,250 +30,79 @@ redirect_from:
      2. 顶部 Hero 区域 (全屏背景)
      ========================================================================== */
   .hero-wrapper {
-    width: 100vw;
-    position: relative;
-    left: 50%; 
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    
-    /* 背景图 */
-    background-image: url('polyu.jpg'); 
-    background-size: cover;
-    background-position: center 30%; /*稍微往下一点，避开天花板*/
-    
-    /* 这里控制卡片上下的留白空间 */
-    padding: 100px 20px; 
-    
-    margin-bottom: 0;
-    box-shadow: inset 0 0 0 1000px rgba(10, 35, 70, 0.5); /* 深蓝遮罩 */
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
+    background-image: url('polyu.jpg'); background-size: cover; background-position: center 30%;
+    padding: 100px 20px; margin-bottom: 0;
+    box-shadow: inset 0 0 0 1000px rgba(10, 35, 70, 0.5);
+    display: flex; justify-content: center; align-items: center;
   }
 
   /* ==========================================================================
-     3. 个人信息卡片 (完全包含头像，不再上浮)
+     3. 个人信息卡片
      ========================================================================== */
   .profile-card {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(15px);
-    padding: 50px; /* 增加内边距，让卡片更舒展 */
-    border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-    
-    max-width: 950px;
-    width: 95%;
-    
-    display: flex;
-    gap: 60px; /* 拉大左右间距 */
-    align-items: center; /* 垂直居中对齐 */
+    background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); padding: 50px; border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2); max-width: 950px; width: 95%;
+    display: flex; gap: 60px; align-items: center;
   }
 
-  /* 左侧头像容器 */
+  /* --- 左侧头像容器 (修改为瘦长椭圆) --- */
   .card-left {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 0 0 auto; display: flex; justify-content: center; align-items: center;
   }
 
-  /* 头像样式修正：不再截断头发 */
   .avatar-img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top center; /* 确保照片从顶部开始显示，防止切头 */
-    border: 5px solid #fff;
+    /* 【关键修改】宽度变小，高度不变，形成纵向椭圆 */
+    width: 160px; 
+    height: 220px; 
+    /* 椭圆圆角设置 */
+    border-radius: 50% / 50%; 
+    object-fit: cover; 
+    /* 调整照片在椭圆中的位置，聚焦脸部 */
+    object-position: center 20%; 
+    border: 5px solid #fff; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   }
 
   /* 右侧信息 */
-  .card-right {
-    flex: 1;
-    text-align: left;
-  }
-
-  .my-name {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #005AB5;
-    margin: 0 0 8px 0;
-    line-height: 1.1;
-  }
-  
-  .my-role {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #555;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #eee; /* 分割线 */
-  }
-
-  .my-info p {
-    margin: 6px 0;
-    color: #444;
-    font-size: 1rem;
-    line-height: 1.6;
-    display: flex;
-    align-items: center;
-  }
-  
-  .my-info i {
-    width: 28px;
-    color: #005AB5;
-    text-align: center;
-    margin-right: 10px;
-    font-size: 1.1em;
-  }
-
-  .social-group {
-    margin-top: 25px;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  
-  .social-btn {
-    background-color: #f0f5fa;
-    color: #005AB5 !important;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    border: 1px solid transparent;
-    transition: all 0.2s ease;
-  }
-  
-  .social-btn:hover {
-    background-color: #005AB5;
-    color: #fff !important;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 90, 181, 0.3);
-  }
+  .card-right { flex: 1; text-align: left; }
+  .my-name { font-size: 2.4rem; font-weight: 700; color: #005AB5; margin: 0 0 8px 0; line-height: 1.1; }
+  .my-role { font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #eee; }
+  .my-info p { margin: 6px 0; color: #444; font-size: 1rem; line-height: 1.6; display: flex; align-items: center; }
+  .my-info i { width: 28px; color: #005AB5; text-align: center; margin-right: 10px; font-size: 1.1em; }
+  .social-group { margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap; }
+  .social-btn { background-color: #f0f5fa; color: #005AB5 !important; padding: 10px 20px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; border: 1px solid transparent; transition: all 0.2s ease; }
+  .social-btn:hover { background-color: #005AB5; color: #fff !important; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 90, 181, 0.3); }
 
   /* ==========================================================================
      4. 导航栏 (优化版)
      ========================================================================== */
-  .nav-wrapper {
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    
-    width: 100vw;
-    margin-left: -50vw;
-    left: 50%;
-    position: relative;
-    margin-bottom: 50px;
-    
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px; /* 按钮间距 */
-    max-width: 1200px;
-  }
-
-  .nav-item {
-    color: #444 !important;
-    font-size: 0.95rem;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-  }
-
-  .nav-item:hover {
-    background-color: #eef4fb; /* 浅蓝背景 */
-    color: #005AB5 !important;
-    transform: translateY(-1px);
-  }
+  .nav-wrapper { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100vw; margin-left: -50vw; left: 50%; position: relative; margin-bottom: 50px; display: flex; justify-content: center; }
+  .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 1200px; }
+  .nav-item { color: #444 !important; font-size: 0.95rem; font-weight: 600; padding: 10px 18px; border-radius: 6px; transition: all 0.2s ease; }
+  .nav-item:hover { background-color: #eef4fb; color: #005AB5 !important; transform: translateY(-1px); }
 
   /* ==========================================================================
      5. 正文样式
      ========================================================================== */
-  .content-container {
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 20px 60px 20px;
-  }
+  .content-container { max-width: 1050px; margin: 0 auto; padding: 0 20px 60px 20px; }
+  h3 { font-size: 1.7rem; color: #222; border-left: 6px solid #005AB5; padding-left: 15px; margin-top: 60px; margin-bottom: 30px; font-weight: 700; }
+  ul.styled-list { padding-left: 20px; }
+  ul.styled-list li { margin-bottom: 12px; line-height: 1.7; color: #444; }
+  .pub-item { margin-bottom: 18px; text-align: justify; line-height: 1.7; padding-left: 1.8em; text-indent: -1.8em; color: #333; font-size: 1rem; }
+  h4 { margin-top: 30px; margin-bottom: 15px; font-weight: 600; color: #555; border-bottom: 1px solid #eee; padding-bottom: 5px; }
 
-  h3 {
-    font-size: 1.7rem;
-    color: #222;
-    border-left: 6px solid #005AB5;
-    padding-left: 15px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-weight: 700;
-  }
-
-  ul.styled-list {
-    padding-left: 20px;
-  }
-  ul.styled-list li {
-    margin-bottom: 12px;
-    line-height: 1.7;
-    color: #444;
-  }
-
-  .pub-item {
-    margin-bottom: 18px;
-    text-align: justify;
-    line-height: 1.7;
-    padding-left: 1.8em;
-    text-indent: -1.8em;
-    color: #333;
-    font-size: 1rem;
-  }
-  
-  h4 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    color: #555;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
-  }
-
-  /* 响应式调整 */
   @media (max-width: 800px) {
-    .profile-card {
-      flex-direction: column;
-      text-align: center;
-      padding: 40px 20px;
-      gap: 30px;
-    }
-    .card-right {
-      text-align: center;
-    }
-    .my-info p {
-      justify-content: center;
-    }
-    .social-group {
-      justify-content: center;
-    }
-    .nav-item {
-      padding: 8px 12px;
-      font-size: 0.85rem;
-    }
+    .profile-card { flex-direction: column; text-align: center; padding: 40px 20px; gap: 30px; }
+    .card-right { text-align: center; }
+    .my-info p { justify-content: center; }
+    .social-group { justify-content: center; }
+    .nav-item { padding: 8px 12px; font-size: 0.85rem; }
   }
 </style>
 
 <div class="hero-wrapper">
   <div class="profile-card">
-    
     <div class="card-left">
       <img src="kunpuji.jpg" alt="Kunpu Ji" class="avatar-img">
     </div>
@@ -301,8 +115,7 @@ redirect_from:
         <p><i class="fas fa-university"></i> Department of Land Surveying and Geo-Informatics (LSGI)</p>
         <p><i class="fas fa-graduation-cap"></i> The Hong Kong Polytechnic University (PolyU)</p>
         <p><i class="fas fa-map-marker-alt"></i> 11 Yuk Choi Road, Hung Hom, Kowloon, Hong Kong</p>
-        <p><i class="fas fa-envelope"></i> kunpu.ji@polyu.edu.hk</p>
-      </div>
+        </div>
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
