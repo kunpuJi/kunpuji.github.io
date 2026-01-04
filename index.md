@@ -14,37 +14,35 @@ redirect_from:
 
 <style>
   /* ==========================================================================
-     0. 基础设置与清理
+     0. 强制隐藏 Cayman 主题默认顶部
      ========================================================================== */
   .page-header { display: none !important; height: 0 !important; padding: 0 !important; margin: 0 !important; overflow: hidden !important; }
   .main-content { padding-top: 0 !important; margin-top: 0 !important; max-width: 100% !important; padding: 0 !important; }
-  body { font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif !important; background-color: #fcfcfc; color: #333; }
+
+  /* ==========================================================================
+     1. 全局样式重置
+     ========================================================================== */
+  body { font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif !important; background-color: #fcfcfc; color: #333; scroll-behavior: smooth; }
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
   /* ==========================================================================
-     1. 顶部背景区域 (Hero)
+     2. 顶部 Hero 区域 (全屏背景)
      ========================================================================== */
   .hero-wrapper {
     width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
-    background-image: url('polyu.jpg'); 
-    background-size: cover; background-position: center 30%;
-    /* 电脑端留白 */
-    padding: 100px 20px; 
-    margin-bottom: 0;
+    background-image: url('polyu.jpg'); background-size: cover; background-position: center 30%;
+    padding: 100px 20px; margin-bottom: 0;
     box-shadow: inset 0 0 0 1000px rgba(10, 35, 70, 0.5);
     display: flex; justify-content: center; align-items: center;
   }
 
   /* ==========================================================================
-     2. 个人信息卡片
+     3. 个人信息卡片
      ========================================================================== */
   .profile-card {
-    background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px);
-    padding: 50px; 
-    border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-    max-width: 950px; width: 95%;
+    background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); padding: 50px; border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2); max-width: 950px; width: 95%;
     display: flex; gap: 60px; align-items: center;
   }
 
@@ -54,8 +52,8 @@ redirect_from:
   /* 头像：瘦长椭圆 */
   .avatar-img {
     width: 160px; height: 220px; 
-    border-radius: 50% / 50%; /* 完美的椭圆 */
-    object-fit: cover; object-position: center 15%; /* 防止切头 */
+    border-radius: 50% / 50%; 
+    object-fit: cover; object-position: center 20%; 
     border: 5px solid #fff; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   }
@@ -64,41 +62,22 @@ redirect_from:
   .card-right { flex: 1; text-align: left; }
   .my-name { font-size: 2.4rem; font-weight: 700; color: #005AB5; margin: 0 0 8px 0; line-height: 1.1; }
   .my-role { font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #eee; }
-  .my-info p { margin: 6px 0; color: #444; font-size: 1rem; line-height: 1.6; display: flex; align-items: flex-start; }
-  .my-info i { width: 28px; color: #005AB5; text-align: center; margin-right: 10px; font-size: 1.1em; margin-top: 3px; }
-
-  /* 按钮组 */
+  .my-info p { margin: 6px 0; color: #444; font-size: 1rem; line-height: 1.6; display: flex; align-items: center; }
+  .my-info i { width: 28px; color: #005AB5; text-align: center; margin-right: 10px; font-size: 1.1em; }
   .social-group { margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap; }
-  .social-btn {
-    background-color: #f0f5fa; color: #005AB5 !important;
-    padding: 10px 20px; border-radius: 8px;
-    font-size: 0.95rem; font-weight: 600;
-    border: 1px solid transparent; transition: all 0.2s ease;
-    display: inline-flex; align-items: center; justify-content: center;
-  }
-  .social-btn:hover { background-color: #005AB5; color: #fff !important; transform: translateY(-3px); }
-  .social-btn i { margin-right: 8px; }
+  .social-btn { background-color: #f0f5fa; color: #005AB5 !important; padding: 10px 20px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; border: 1px solid transparent; transition: all 0.2s ease; }
+  .social-btn:hover { background-color: #005AB5; color: #fff !important; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 90, 181, 0.3); }
 
   /* ==========================================================================
-     3. 导航栏
+     4. 导航栏
      ========================================================================== */
-  .nav-wrapper {
-    background: #fff; border-bottom: 1px solid #eee;
-    padding: 15px 0; position: sticky; top: 0; z-index: 999;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    width: 100vw; margin-left: -50vw; left: 50%; position: relative; margin-bottom: 50px;
-    display: flex; justify-content: center;
-  }
+  .nav-wrapper { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100vw; margin-left: -50vw; left: 50%; position: relative; margin-bottom: 50px; display: flex; justify-content: center; }
   .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 1200px; }
-  .nav-item {
-    color: #444 !important; font-size: 0.95rem; font-weight: 600;
-    padding: 10px 18px; border-radius: 6px; transition: all 0.2s ease;
-    white-space: nowrap; /* 防止文字换行 */
-  }
+  .nav-item { color: #444 !important; font-size: 0.95rem; font-weight: 600; padding: 10px 18px; border-radius: 6px; transition: all 0.2s ease; }
   .nav-item:hover { background-color: #eef4fb; color: #005AB5 !important; transform: translateY(-1px); }
 
   /* ==========================================================================
-     4. 正文样式
+     5. 正文样式
      ========================================================================== */
   .content-container { max-width: 1050px; margin: 0 auto; padding: 0 20px 60px 20px; }
   h3 { font-size: 1.7rem; color: #222; border-left: 6px solid #005AB5; padding-left: 15px; margin-top: 60px; margin-bottom: 30px; font-weight: 700; }
@@ -108,74 +87,44 @@ redirect_from:
   h4 { margin-top: 30px; margin-bottom: 15px; font-weight: 600; color: #555; border-bottom: 1px solid #eee; padding-bottom: 5px; }
 
   /* ==========================================================================
-     !!! 移动端深度优化 (Mobile Optimization) !!!
+     6. 回到顶部按钮 (Back To Top Button)
      ========================================================================== */
-  @media (max-width: 768px) {
-    /* 1. 调整顶部留白 */
-    .hero-wrapper { padding: 60px 15px; } /* 减少内边距 */
-    
-    /* 2. 卡片变为垂直布局 */
-    .profile-card { 
-        flex-direction: column; 
-        text-align: center; 
-        padding: 30px 20px; 
-        gap: 25px; 
-    }
-    .card-right { text-align: center; width: 100%; }
-    
-    /* 3. 头像调整：稍微缩小一点适应手机 */
-    .avatar-img { 
-        width: 140px; 
-        height: 190px; 
-    }
+  #back-to-top {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #005AB5; /* 你的主题蓝 */
+    color: white;
+    cursor: pointer;
+    border-radius: 50%; /* 圆形 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-size: 20px;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #back-to-top:hover {
+    background-color: #003d7a;
+    transform: translateY(-5px); /* 悬停上浮 */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  }
 
-    /* 4. 名字字号缩小，防止换行 */
-    .my-name { font-size: 1.8rem; margin-bottom: 10px; }
-    
-    /* 5. 职位下划线居中 */
-    .my-role { 
-        border-bottom: none; 
-        position: relative; 
-        display: inline-block;
-        padding-bottom: 10px;
-    }
-    .my-role::after {
-        content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-        width: 50px; height: 2px; background: #eee;
-    }
-
-    /* 6. 信息图标居中对齐 */
-    .my-info p { justify-content: center; font-size: 0.9rem; }
-    
-    /* 7. 按钮组：改为 2x2 网格，整齐排列 */
-    .social-group { 
-        display: grid; 
-        grid-template-columns: 1fr 1fr; /* 两列等宽 */
-        gap: 10px; 
-        width: 100%;
-    }
-    .social-btn { width: 100%; padding: 10px 0; font-size: 0.9rem; }
-
-    /* 8. 导航栏：改为横向滑动 (类似 App Store 分类) */
-    .nav-wrapper {
-        justify-content: flex-start; /* 内容靠左 */
-        overflow-x: auto; /* 允许横向滑动 */
-        -webkit-overflow-scrolling: touch; /* 流畅滚动 */
-        padding: 10px 0;
-        margin-bottom: 30px;
-    }
-    .nav-links {
-        flex-wrap: nowrap; /* 强制不换行 */
-        padding: 0 15px; /* 两侧留白 */
-        gap: 10px;
-        justify-content: flex-start;
-    }
-    .nav-item {
-        background-color: #f5f5f5; /* 手机上加个浅灰背景，像个按钮 */
-        border: 1px solid #eee;
-        padding: 8px 15px;
-        font-size: 0.85rem;
-    }
+  /* 移动端适配 */
+  @media (max-width: 800px) {
+    .profile-card { flex-direction: column; text-align: center; padding: 40px 20px; gap: 30px; }
+    .card-right { text-align: center; }
+    .my-info p { justify-content: center; }
+    .social-group { justify-content: center; }
+    .nav-item { padding: 8px 12px; font-size: 0.85rem; }
+    /* 移动端按钮稍微小一点，位置靠边一点 */
+    #back-to-top { width: 45px; height: 45px; bottom: 20px; right: 20px; font-size: 18px; }
   }
 </style>
 
@@ -208,7 +157,7 @@ redirect_from:
 <div class="nav-wrapper">
   <div class="nav-links">
     <a href="#News" class="nav-item">News</a>
-    <a href="#Research" class="nav-item">Research</a>
+    <a href="#Research" class="nav-item">Research Interests</a>
     <a href="#Education" class="nav-item">Education</a>
     <a href="#Experience" class="nav-item">Experience</a>
     <a href="#Publications" class="nav-item">Publications</a>
@@ -314,3 +263,29 @@ redirect_from:
   </ul>
 
 </div>
+
+<button id="back-to-top" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  // 获取按钮
+  var mybutton = document.getElementById("back-to-top");
+
+  // 监听滚动
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    // 滚动超过 300px 显示按钮
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      mybutton.style.display = "flex"; // 使用 flex 让图标居中
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // 点击平滑滚动回顶部
+  mybutton.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+</script>
