@@ -1,14 +1,3 @@
----
-permalink: /
-title: "About Me"
-excerpt: "About Me"
-author_profile: false
-classes: wide
-redirect_from: 
-  - /about/
-  - /about.html
----
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
@@ -22,7 +11,7 @@ redirect_from:
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    background-image: url('/images/polyu.jpg'); /* 【背景图片路径】 */
+    background-image: url('polyu.jpg'); /* 【背景图片路径】 */
     background-size: cover;
     background-position: center;
     padding: 80px 20px;
@@ -203,7 +192,7 @@ redirect_from:
   <div class="profile-card">
     
     <div class="profile-left">
-      <img src="/images/kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
+      <img src="kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
     </div>
 
     <div class="profile-right">
