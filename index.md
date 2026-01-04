@@ -13,7 +13,7 @@ redirect_from:
 
 <style>
   /* ==========================================================================
-     核心布局：强制突破容器限制，实现全屏背景
+     核心布局：全屏背景
      ========================================================================== */
   .full-width-header {
     width: 100vw;
@@ -22,126 +22,166 @@ redirect_from:
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    background-image: url('polyu.jpg'); /* 【请修改这里：背景图片路径】 */
+    background-image: url('/images/polyu.jpg'); /* 【背景图片路径】 */
     background-size: cover;
     background-position: center;
     padding: 80px 20px;
     margin-bottom: 40px;
-    box-shadow: inset 0 0 0 1000px rgba(0, 40, 85, 0.3); /* 叠加一层深蓝色遮罩，让文字更清晰 */
+    box-shadow: inset 0 0 0 1000px rgba(0, 40, 85, 0.4); /* 加深一点遮罩，突出卡片 */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   /* ==========================================================================
-     个人信息悬浮卡片 (仿 Jun CEN 风格)
+     个人信息悬浮卡片 (左右布局)
      ========================================================================== */
   .profile-card {
-    background: rgba(255, 255, 255, 0.95); /* 半透明白色背景 */
-    backdrop-filter: blur(10px); /* 毛玻璃效果 */
-    padding: 40px 50px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    text-align: center;
-    max-width: 800px;
-    width: 90%;
-    position: relative;
+    max-width: 900px;
+    width: 95%;
+    
+    /* 关键：启用 Flexbox 实现左右布局 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center;
+    gap: 50px; /* 左右两栏的间距 */
   }
 
-  /* 头像样式 */
+  /* --- 左侧：头像区域 --- */
+  .profile-left {
+    flex: 0 0 auto; /* 不缩放 */
+  }
+
   .profile-avatar {
-    width: 160px;
-    height: 160px;
+    width: 220px;       /* 稍微加大一点头像 */
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    margin-top: -80px; /* 让头像只有一半在卡片内，一半突出在上面，增加层次感 */
-    margin-bottom: 20px;
-    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    display: block;
   }
 
-  /* 名字与职位 */
+  /* --- 右侧：信息区域 --- */
+  .profile-right {
+    text-align: left; /* 文字左对齐 */
+    flex: 1;
+  }
+
   .profile-name {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #005AB5; /* PolyU Blue */
-    margin-bottom: 5px;
-  }
-  .profile-role {
-    font-size: 1.1rem;
-    color: #555;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  .profile-dept {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 20px;
-    line-height: 1.4;
+    color: #005AB5;
+    margin-bottom: 8px;
+    line-height: 1.2;
   }
 
-  /* 社交链接按钮栏 */
+  .profile-role {
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .profile-dept {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .profile-info-item {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .profile-info-item i {
+    color: #005AB5;
+    width: 20px;     /* 固定宽度对齐图标 */
+    margin-right: 8px;
+    text-align: center;
+  }
+
+  /* 社交链接按钮 */
   .social-buttons {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 12px;
     margin-top: 25px;
     flex-wrap: wrap;
   }
   .social-btn {
     display: inline-flex;
     align-items: center;
-    padding: 8px 16px;
+    padding: 6px 14px;
     background-color: #f0f4f8;
     color: #005AB5;
-    border-radius: 20px;
+    border-radius: 6px;
     text-decoration: none !important;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.2s ease;
   }
-  .social-btn i { margin-right: 6px; }
   .social-btn:hover {
     background-color: #005AB5;
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,90,181,0.3);
+  }
+
+  /* --- 响应式适配：手机端变为上下布局 --- */
+  @media (max-width: 768px) {
+    .profile-card {
+      flex-direction: column; /* 改为垂直排列 */
+      text-align: center;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+    .profile-right {
+      text-align: center; /* 手机端居中对齐 */
+    }
+    .profile-avatar {
+      width: 160px;
+      height: 160px;
+    }
+    .profile-info-item {
+      justify-content: center; /* 手机端图标文字居中 */
+    }
+    .social-buttons {
+      justify-content: center;
+    }
   }
 
   /* ==========================================================================
-     导航栏样式 (整洁的横向菜单)
+     导航栏与正文样式 (保持不变)
      ========================================================================== */
   .custom-nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
   }
   .custom-nav a {
-    color: #444;
+    color: #555;
     text-decoration: none !important;
     font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 6px;
-    transition: background 0.2s;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s;
   }
   .custom-nav a:hover {
     background-color: #eef2f6;
     color: #005AB5;
   }
-  .custom-nav a.active {
-    background-color: #eef2f6;
-    color: #005AB5;
-    font-weight: bold;
-  }
 
-  /* ==========================================================================
-     内容区域修正
-     ========================================================================== */
   h3 {
     border-left: 5px solid #005AB5;
     padding-left: 12px;
@@ -150,48 +190,48 @@ redirect_from:
     color: #333;
   }
   
-  /* 列表优化 */
-  ul.styled-list li {
-    margin-bottom: 10px;
-  }
-  
-  /* 论文列表间距 */
   .pub-item {
     margin-bottom: 15px;
     text-align: justify;
   }
-
-  /* 针对移动端的微调 */
-  @media (max-width: 768px) {
-    .full-width-header { padding: 40px 15px; }
-    .profile-card { padding: 20px; }
-    .profile-avatar { width: 120px; height: 120px; margin-top: -60px; }
-    .profile-name { font-size: 1.8rem; }
+  ul.styled-list li {
+    margin-bottom: 10px;
   }
 </style>
 
 <div class="full-width-header">
   <div class="profile-card">
-    <img src="/kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
     
-    <div class="profile-name">Kunpu Ji (嵇昆浦)</div>
-    <div class="profile-role">Postdoctoral Researcher</div>
-    
-    <div class="profile-dept">
-      Department of Land Surveying and Geo-Informatics (LSGI)<br>
-      The Hong Kong Polytechnic University (PolyU)
+    <div class="profile-left">
+      <img src="/images/kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
     </div>
 
-    <div style="font-size: 0.9rem; color: #666;">
-      <i class="fas fa-map-marker-alt" style="color:#005AB5"></i> 11 Yuk Choi Road, Hung Hom, Kowloon, Hong Kong
+    <div class="profile-right">
+      <div class="profile-name">Kunpu Ji (嵇昆浦)</div>
+      <div class="profile-role">Postdoctoral Researcher</div>
+      
+      <div class="profile-dept">
+        Department of Land Surveying and Geo-Informatics (LSGI)<br>
+        The Hong Kong Polytechnic University (PolyU)
+      </div>
+
+      <div class="profile-info-item">
+        <i class="fas fa-map-marker-alt"></i> 
+        <span>11 Yuk Choi Road, Hung Hom, Kowloon, Hong Kong</span>
+      </div>
+      <div class="profile-info-item">
+        <i class="fas fa-envelope"></i>
+        <span>kunpu.ji@polyu.edu.hk</span>
+      </div>
+
+      <div class="social-buttons">
+        <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
+        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" class="social-btn"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Qunming_Wang" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
+        <a href="https://github.com/your-github-id" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
 
-    <div class="social-buttons">
-      <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" class="social-btn"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-      <a href="https://www.researchgate.net/profile/Qunming_Wang" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
-      <a href="https://github.com/your-github-id" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
-    </div>
   </div>
 </div>
 
