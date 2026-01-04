@@ -22,7 +22,7 @@ redirect_from:
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    background-image: url('/images/polyu_bg.jpg'); /* 【请修改这里：背景图片路径】 */
+    background-image: url('polyu.jpg'); /* 【请修改这里：背景图片路径】 */
     background-size: cover;
     background-position: center;
     padding: 80px 20px;
