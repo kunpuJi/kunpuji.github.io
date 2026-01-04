@@ -172,7 +172,7 @@ redirect_from:
 
 <div class="full-width-header">
   <div class="profile-card">
-    <img src="/images/kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
+    <img src="/kunpuji.jpg" alt="Kunpu Ji" class="profile-avatar">
     
     <div class="profile-name">Kunpu Ji (嵇昆浦)</div>
     <div class="profile-role">Postdoctoral Researcher</div>
