@@ -14,9 +14,8 @@ redirect_from:
 
 <style>
   /* ==========================================================================
-     【关键修复】针对 Cayman 主题的暴力隐藏补丁
+     0. 强制隐藏 Cayman 主题默认顶部
      ========================================================================== */
-  /* 隐藏 Cayman 主题默认的顶部大标题栏 */
   .page-header {
     display: none !important;
     height: 0 !important;
@@ -24,31 +23,26 @@ redirect_from:
     margin: 0 !important;
     overflow: hidden !important;
   }
-  
-  /* 移除 Cayman 默认的主体内容边距，防止顶部留白 */
   .main-content {
     padding-top: 0 !important;
     margin-top: 0 !important;
-    /* 在宽屏模式下允许内容更宽 */
-    max-width: 100% !important; 
+    max-width: 100% !important;
     padding: 0 !important;
   }
 
   /* ==========================================================================
-     全局字体与布局重置
+     1. 全局样式重置
      ========================================================================== */
   body {
-    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    background-color: #fdfdfd; /* 极淡的灰白背景，不刺眼 */
+    font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif !important;
+    background-color: #fcfcfc;
     color: #333;
   }
-  
-  /* 链接颜色 */
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
   /* ==========================================================================
-     1. 顶部全屏背景图 (Full Width Hero)
+     2. 顶部 Hero 区域 (全屏背景)
      ========================================================================== */
   .hero-wrapper {
     width: 100vw;
@@ -58,15 +52,16 @@ redirect_from:
     margin-left: -50vw;
     margin-right: -50vw;
     
-    /* 【背景图设置】请确保 images 文件夹下有 polyu.jpg */
+    /* 背景图 */
     background-image: url('polyu.jpg'); 
     background-size: cover;
-    background-position: center;
-    padding: 80px 20px;
-    margin-bottom: 0; /* 下方紧接导航栏 */
+    background-position: center 30%; /*稍微往下一点，避开天花板*/
     
-    /* 叠加深色遮罩，让卡片更突出 */
-    box-shadow: inset 0 0 0 1000px rgba(13, 44, 84, 0.4); 
+    /* 这里控制卡片上下的留白空间 */
+    padding: 100px 20px; 
+    
+    margin-bottom: 0;
+    box-shadow: inset 0 0 0 1000px rgba(10, 35, 70, 0.5); /* 深蓝遮罩 */
     
     display: flex;
     justify-content: center;
@@ -74,118 +69,125 @@ redirect_from:
   }
 
   /* ==========================================================================
-     2. 个人信息卡片 (Glassmorphism 风格)
+     3. 个人信息卡片 (完全包含头像，不再上浮)
      ========================================================================== */
   .profile-card {
-    background: rgba(255, 255, 255, 0.96); /* 高不透明度白色 */
-    backdrop-filter: blur(10px);
-    padding: 45px;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15); /* 柔和的高级阴影 */
-    max-width: 900px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    padding: 50px; /* 增加内边距，让卡片更舒展 */
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    
+    max-width: 950px;
     width: 95%;
-    display: flex; /* 启用 Flexbox 左右布局 */
-    gap: 50px;
-    align-items: flex-start;
+    
+    display: flex;
+    gap: 60px; /* 拉大左右间距 */
+    align-items: center; /* 垂直居中对齐 */
   }
 
-  /* 左侧：头像 */
+  /* 左侧头像容器 */
   .card-left {
     flex: 0 0 auto;
-  }
-  .avatar-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 6px solid #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* 右侧：信息 */
+  /* 头像样式修正：不再截断头发 */
+  .avatar-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center; /* 确保照片从顶部开始显示，防止切头 */
+    border: 5px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  /* 右侧信息 */
   .card-right {
     flex: 1;
-    text-align: left; /* 强制左对齐 */
-    padding-top: 10px;
+    text-align: left;
   }
 
   .my-name {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    color: #005AB5; /* PolyU Blue */
-    margin: 0 0 5px 0;
-    line-height: 1.2;
+    color: #005AB5;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
   }
   
   .my-role {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    color: #444;
-    margin-bottom: 15px;
+    color: #555;
+    margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #f0f0f0; /* 细分割线 */
+    border-bottom: 2px solid #eee; /* 分割线 */
   }
 
   .my-info p {
-    margin: 5px 0;
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    margin: 6px 0;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.6;
     display: flex;
     align-items: center;
   }
   
   .my-info i {
-    width: 25px;
+    width: 28px;
     color: #005AB5;
     text-align: center;
-    margin-right: 8px;
+    margin-right: 10px;
+    font-size: 1.1em;
   }
 
-  /* 社交按钮组 */
   .social-group {
     margin-top: 25px;
     display: flex;
-    gap: 12px;
+    gap: 15px;
     flex-wrap: wrap;
   }
   
   .social-btn {
-    background-color: #f2f7fc;
+    background-color: #f0f5fa;
     color: #005AB5 !important;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
     font-weight: 600;
     border: 1px solid transparent;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
   }
   
   .social-btn:hover {
     background-color: #005AB5;
     color: #fff !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 90, 181, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 90, 181, 0.3);
   }
 
   /* ==========================================================================
-     3. 导航栏 (现代化胶囊样式)
+     4. 导航栏 (优化版)
      ========================================================================== */
   .nav-wrapper {
     background: #fff;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #eee;
     padding: 15px 0;
-    position: sticky; /* 吸顶效果 (可选) */
+    position: sticky;
     top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     
-    /* 强制全宽背景 */
     width: 100vw;
     margin-left: -50vw;
     left: 50%;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    
     display: flex;
     justify-content: center;
   }
@@ -194,83 +196,82 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 5px; /* 按钮间距 */
     max-width: 1200px;
   }
 
   .nav-item {
-    color: #555 !important;
+    color: #444 !important;
     font-size: 0.95rem;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 20px; /* 胶囊圆角 */
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
     transition: all 0.2s ease;
   }
 
   .nav-item:hover {
-    background-color: #eef4fa;
+    background-color: #eef4fb; /* 浅蓝背景 */
     color: #005AB5 !important;
+    transform: translateY(-1px);
   }
 
   /* ==========================================================================
-     4. 正文内容区域布局
+     5. 正文样式
      ========================================================================== */
   .content-container {
-    max-width: 1000px; /* 限制正文宽度，防止太宽难看 */
+    max-width: 1050px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 60px 20px;
   }
 
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: #222;
-    border-left: 5px solid #005AB5; /* 左侧蓝色竖线 */
+    border-left: 6px solid #005AB5;
     padding-left: 15px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 700;
   }
 
-  /* 列表优化 */
   ul.styled-list {
     padding-left: 20px;
   }
   ul.styled-list li {
     margin-bottom: 12px;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: #444;
   }
 
-  /* 论文列表项 */
   .pub-item {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     text-align: justify;
-    line-height: 1.6;
-    padding-left: 1.5em;
-    text-indent: -1.5em; /* 悬挂缩进 */
+    line-height: 1.7;
+    padding-left: 1.8em;
+    text-indent: -1.8em;
     color: #333;
+    font-size: 1rem;
+  }
+  
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
   }
 
-  /* ==========================================================================
-     响应式适配 (手机端)
-     ========================================================================== */
-  @media (max-width: 768px) {
+  /* 响应式调整 */
+  @media (max-width: 800px) {
     .profile-card {
       flex-direction: column;
-      align-items: center;
       text-align: center;
-      padding: 30px 20px;
-      gap: 20px;
+      padding: 40px 20px;
+      gap: 30px;
     }
     .card-right {
       text-align: center;
-      padding-top: 0;
-    }
-    .avatar-img {
-      width: 150px;
-      height: 150px;
-    }
-    .my-role {
-      border-bottom: none;
-      margin-bottom: 10px;
     }
     .my-info p {
       justify-content: center;
@@ -278,17 +279,16 @@ redirect_from:
     .social-group {
       justify-content: center;
     }
-    /* 导航栏手机端微调 */
     .nav-item {
-      padding: 6px 12px;
+      padding: 8px 12px;
       font-size: 0.85rem;
-      background-color: #f5f5f5; /* 手机端加个底色区分 */
     }
   }
 </style>
 
 <div class="hero-wrapper">
   <div class="profile-card">
+    
     <div class="card-left">
       <img src="kunpuji.jpg" alt="Kunpu Ji" class="avatar-img">
     </div>
@@ -306,7 +306,7 @@ redirect_from:
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
-        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book"></i> Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Qunming_Wang" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
       </div>
@@ -393,12 +393,12 @@ redirect_from:
 
   <a name="Codes"></a>
   <h3>Codes</h3>
-  <p style="color: #777; font-style: italic; padding: 20px; background: #f9f9f9; border-radius: 8px; text-align: center;">Codes will be uploaded soon...</p>
+  <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Codes will be uploaded soon...</p>
 
   <a name="Datasets"></a>
   <h3>Datasets</h3>
   <p>
-    <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785" target="_blank" class="social-btn" style="padding: 4px 10px; font-size: 0.8rem; background:#fff; border:1px solid #ccc;"><i class="fas fa-database"></i> Data Link</a><br>
+    <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785" target="_blank" class="social-btn" style="padding: 4px 10px; font-size: 0.8rem; background:#fff; border:1px solid #ddd; color:#555 !important;"><i class="fas fa-database"></i> Data Link</a><br>
     <span style="font-size: 0.95em; color: #555; display: block; margin-top: 5px;">J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.</span>
   </p>
 
@@ -422,4 +422,4 @@ redirect_from:
     <li><b>2018:</b> Second Prize, The 15th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling</li>
   </ul>
 
-</div> ```
+</div>
