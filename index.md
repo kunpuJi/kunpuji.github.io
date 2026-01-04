@@ -34,28 +34,23 @@
 <a name="Research"></a>
 <h3><font color="black">Research Interests</font></h3>
 
-- Remote sensing image processing, including image fusion, downscaling, data reconstruction, land-cover/land-use mapping and change detection, and mixed pixel analysis
-- Geostatistics and spatial statistics
-- Machine learning
+- Geodetic data processing theory, including parameter estimation, variance component estimation (VCE), quality control, and time series analysis
+- GNSS-based hydrogeodesy
+- Filtering of GRACE time-variable gravity field solutions and related applications
 
 <a name="Education"></a>
 <h3><font color="black">Education</font></h3>
 
-- 08/2012 – 09/2015 &nbsp;&nbsp;&nbsp;&nbsp; <b>Ph.D.</b> in Photogrammetry and Remote Sensing, The Hong Kong 
-                                                Polytechnic University, HK
-- 09/2010 – 06/2012	&nbsp;&nbsp;&nbsp;&nbsp; <b>M.S.</b> in Signal and Information Processing, Harbin Engineering University, 
-                                                China
-- 09/2006 – 06/2010	&nbsp;&nbsp;&nbsp;&nbsp; <b>B.S.</b> in Electronics and Information Engineering, Harbin Engineering 
-                                                University, China
+- 09/2021 – 05/2025 &nbsp;&nbsp;&nbsp;&nbsp; <b>Ph.D.</b> in Geodesy, Tongji University, China
+- 09/2017 – 06/2020	&nbsp;&nbsp;&nbsp;&nbsp; <b>M.S.</b> in Surveying Engineering, Tongji University, China
+- 09/2013 – 06/2017	&nbsp;&nbsp;&nbsp;&nbsp; <b>B.S.</b> in Surveying Engineering, Nanjing Tech University, China
 
 <a name="Experience"></a>
 <h3><font color="black">Professional Experience</font></h3>
 
-- 05/2018 – Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Professor, College of Surveying and Geo-Informatics, Tongji University, China
-- 08/2017 – 04/2018	&nbsp;&nbsp;&nbsp;&nbsp; Lecturer (Assistant Professor), Lancaster Environment Centre, Lancaster University, UK
-- 08/2015 – 07/2017	&nbsp;&nbsp;&nbsp;&nbsp; Senior Research Associate, Lancaster Environment Centre, Lancaster University, UK
-- 10/2016	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visiting Scholar, Institute of Earth Surface Dynamics, University of Lausanne, Switzerland (Invited by Prof. Gregoire Mariethoz)
-- 06/2013 – 12/2013	&nbsp;&nbsp;&nbsp;&nbsp; Visiting PhD student, Geography and Environment, University of Southampton, UK
+- 10/2025 – Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postdoctoral Research Fellow, Department of Land Surveying and Geo-Informatics, The Hong Kong Polytechnic University, Hong Kong, China
+- 06/2025 – 09/2025	&nbsp;&nbsp;&nbsp;&nbsp; Research Assistant, College of Surveying and Geo-informatics, Tongji University, Shanghai, China
+- 07/2020 – 07/2021	&nbsp;&nbsp;&nbsp;&nbsp; Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc., Shanghai, China
 
 <a name="Publications (Selected)"></a>
 <h3><font color="black">Publications</font></h3>
@@ -206,8 +201,10 @@ SSRBF (<a href="https://github.com/qunmingwang/SSRBF">Code</a>)
 <a name="Awards"></a>
 <h3><font color="black">Awards & Honors</font></h3>
 
-- 2017	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Grand Prize of the Science and Technology Progress Award in Surveying and Mapping (Ranking No. 4)
-- 2016		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Outstanding PhD thesis in Faculty of Construction and Environment, Hong Kong PolyU
-- 2012 – 2015	 &thinsp;	Hong Kong PhD Fellowship
-- 2012      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   		Excellent Graduate in Harbin Engineering University, China
-- 2012      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 		Excellent Graduate in Heilongjiang Province, China
+- 2025: Excellent Doctoral Dissertation of Tongji University (Top 2 in the major)
+- 2025: Outstanding Graduate of Tongji University
+- 2024: China Scholarship Council (CSC) Scholarship
+- 2023: National Scholarship for Doctoral Students (Ministry of Education of China)
+- 2023: Outstanding Student of Tongji University
+- 2020: Excellent Master's Dissertation of Tongji University (Top 2 in the major)
+- 2018: Second Prize, The 15th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling
