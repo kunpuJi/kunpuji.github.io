@@ -2,7 +2,7 @@
 <table border="0">
   <tr>
     <td width="20%">
-      <img src="/kunpuji.png" width="100%">
+      <img src="/kunpuji.jpg" width="100%">
     </td>
     <td width="80%" align="center" valign="middle">
       <h1><font color="#005AB5">Kunpu Ji (嵇昆浦)</font></h1>
