@@ -1,4 +1,3 @@
-
 <table border="0">
   <tr>
     <td width="20%">
@@ -15,20 +14,19 @@
   </tr>
 </table>
 
-
-[ <a href="#News">News</a> / <a href="#Research">Research Interests</a> / <a href="#Education">Education</a> / <a href="#Experience">Professional Experience</a> / <a href="#Publications">Publications</a> / <a href="#Codes">Codes</a> /  <a href="#Datasets">Datasets</a> / <a href="#Professional">Professional Service</a> / <a href="#Awards">Awards & Honors</a> ]
+[ <a href="#News">News</a> / <a href="#Research">Research Interests</a> / <a href="#Education">Education</a> / <a href="#Experience">Professional Experience</a> / <a href="#Publications_Selected">Publications</a> / <a href="#Codes">Codes</a> /  <a href="#Datasets">Datasets</a> / <a href="#Professional">Professional Service</a> / <a href="#Awards">Awards & Honors</a> ]
 
 <a name="News"></a>
 <h3><font color="black">News</font></h3>
 
-- 10/2025		 &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;			A paper on soil moisture data reconstruction is published in <b>RSE</b><br/>
+- 10/2025        &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;           A paper on soil moisture data reconstruction is published in <b>RSE</b><br/>
 <a href="https://www.sciencedirect.com/science/article/pii/S0034425725002457">https://www.sciencedirect.com/science/article/pii/S0034425725002457</a>
-- 03/2025		 &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;			A paper on subpixel mapping is published in <b>RSE</b><br/>
+- 03/2025        &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;           A paper on subpixel mapping is published in <b>RSE</b><br/>
 <a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425724005406">https://www.sciencedirect.com/science/article/abs/pii/S0034425724005406</a>
-- 05/2024		 &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;			A paper on Landsat LST gap filling is published in <b>RSE</b><br/>
+- 05/2024        &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;           A paper on Landsat LST gap filling is published in <b>RSE</b><br/>
 <a href="https://www.sciencedirect.com/science/article/pii/S0034425724001536">https://www.sciencedirect.com/science/article/pii/S0034425724001536</a>
-- 06/2023		 &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;			A paper on 30 m young forest age in China is accepted by <b>ESSD</b><br/>
-- 03/2022		 &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;			A paper on haze removal is published in <b>RSE</b><br/>
+- 06/2023        &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;           A paper on 30 m young forest age in China is accepted by <b>ESSD</b><br/>
+- 03/2022        &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;           A paper on haze removal is published in <b>RSE</b><br/>
 <a href="https://www.sciencedirect.com/science/article/pii/S0034425722001262">https://www.sciencedirect.com/science/article/pii/S0034425722001262</a>
 
 <a name="Research"></a>
@@ -42,17 +40,17 @@
 <h3><font color="black">Education</font></h3>
 
 - 09/2021 – 05/2025 &nbsp;&nbsp;&nbsp;&nbsp; <b>Ph.D.</b> in Geodesy, Tongji University, China
-- 09/2017 – 06/2020	&nbsp;&nbsp;&nbsp;&nbsp; <b>M.S.</b> in Surveying Engineering, Tongji University, China
-- 09/2013 – 06/2017	&nbsp;&nbsp;&nbsp;&nbsp; <b>B.S.</b> in Surveying Engineering, Nanjing Tech University, China
+- 09/2017 – 06/2020 &nbsp;&nbsp;&nbsp;&nbsp; <b>M.S.</b> in Surveying Engineering, Tongji University, China
+- 09/2013 – 06/2017 &nbsp;&nbsp;&nbsp;&nbsp; <b>B.S.</b> in Surveying Engineering, Nanjing Tech University, China
 
 <a name="Experience"></a>
 <h3><font color="black">Professional Experience</font></h3>
 
 - 10/2025 – Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Postdoctoral Research Fellow, Department of Land Surveying and Geo-Informatics, The Hong Kong Polytechnic University, Hong Kong, China
-- 06/2025 – 09/2025	&nbsp;&nbsp;&nbsp;&nbsp; Research Assistant, College of Surveying and Geo-informatics, Tongji University, Shanghai, China
-- 07/2020 – 07/2021	&nbsp;&nbsp;&nbsp;&nbsp; Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc., Shanghai, China
+- 06/2025 – 09/2025 &nbsp;&nbsp;&nbsp;&nbsp; Research Assistant, College of Surveying and Geo-informatics, Tongji University, Shanghai, China
+- 07/2020 – 07/2021 &nbsp;&nbsp;&nbsp;&nbsp; Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc., Shanghai, China
 
-<a name="Publications (Selected)"></a>
+<a name="Publications_Selected"></a>
 <h3><font color="black">Publications</font></h3>
 
 - Google Scholar: <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en">https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en</a>
@@ -104,63 +102,15 @@
 <a name="Codes"></a>
 <h3><font color="black">Codes</font></h3>
 
-- <b>Sub-pixel mapping of remote sensing images based on radial basis function interpolation</b> <br/>
-RBF-based sub-pixel mapping (<a href="https://github.com/qunmingwang/RBF-based-sub-pixel-mapping-codes">Code</a>) 
-
-- <b>Fusion of Sentinel-2 images</b> <br/>
-  <b>Downscaling MODIS images with area-to-point regression kriging</b> <br/>
-ATPRK (<a href="https://github.com/qunmingwang/Code-for-S2-fusion">Code</a>) 
-
-- <b>Spatio-temporal fusion for daily Sentinel-2 images</b> <br/>
-Fit-FC (<a href="https://github.com/wqm11111/Fit-FC">Code</a>) 
-
-- <b>Virtual image pair-based spatio-temporal fusion</b> <br/>
-VIPSTF-SW (<a href="https://github.com/qunmingwang/VIPSTF-SW">Code</a>) 
-
-- <b>Information loss-guided multi-resolution image fusion</b> <br/>
-ILGIF (<a href="https://github.com/qunmingwang/ILGIF">Code</a>) 
-
-- <b>Spatial-spectral radial basis function-based interpolation for Landsat ETM+ SLC-Off image gap filling</b> <br/>
-SSRBF (<a href="https://github.com/qunmingwang/SSRBF">Code</a>)
+<p>To be added...</p>
 
 <a name="Datasets"></a>
 <h3><font color="black">Datasets</font></h3>
 
-- <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> &nbsp;(<a href="https://doi.org/10.5281/zenodo.11918785">https://doi.org/10.5281/zenodo.11918785</a>)
-<br/>J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.
-
-- <b>30 m canopy height map across China in 2020</b> &nbsp;(<a href="https://doi.org/10.5281/zenodo.11560195">https://doi.org/10.5281/zenodo.11560195</a>)
-<br/>Y. Xiao, Q. Wang*, H. Xi, X. Tong. A 30 m canopy height map in China created by fusion of multiple relative height metrics. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4411116.
-
-- <b> Spatially seamless, daily FY-3B (SSD_FY3B) surface soil moisture dataset from 2012 to 2018</b> &nbsp;(<a href=" https://doi.org/10.6084/m9.figshare.27957429.v4">https://doi.org/10.6084/m9.figshare.27957429.v4</a>)
-<br/>Q. Wang, Y. You, H. Yang, R. Xu, H. K. Zhang, P. Lu, X. Tong. A TCN-Transformer parallel model for reconstruction of a global, daily, spatially seamless FY-3B soil moisture dataset. Remote Sensing of Environment, 2025, 328: 114841.
-
-- <b>500 m, 8-day historical MODIS FVC dataset from 1982–2000 in China</b> &nbsp;(<a href="https://doi.org/10.6084/m9.figshare.24616446.v1">https://doi.org/10.6084/m9.figshare.24616446.v1</a>)
-<br/>X. Ding, Q. Wang*, H. Yang, P. M. Atkinson. Reconstruction of 500-m, 8-day historical MODIS fractional vegetation cover (FVC) dataset (1982-2000) in China. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4409619.
-
-- <b>Thirty-meter map of young forest age in China</b> &nbsp;(<a href="https://doi.org/10.6084/m9.figshare.21627023.v7">https://doi.org/10.6084/m9.figshare.21627023.v7</a>)
-<br/>Y. Xiao, Q. Wang*, X. Tong, P. M. Atkinson. Thirty-meter map of young forest age in China. Earth System Science Data, 2023, 15: 3365–3386.
-
-- <b>Thirty-meter map of global natural and planted forests</b> &nbsp;(<a href="https://doi.org/10.5281/zenodo.10701417">https://doi.org/10.5281/zenodo.10701417</a>)
-<br/>Y. Xiao, Q. Wang*, H. K. Zhang. Global natural and planted forests mapping at fine spatial resolution of 30 m. Journal of Remote Sensing, 2024, 4: 0204.
-
-- <b>VIPSTF-9</b> &nbsp;(<a href="https://doi.org/10.6084/m9.figshare.14634276">https://doi.org/10.6084/m9.figshare.14634276</a>)
-<br/>H. Yang, Q. Wang*, W. Zhao, X. Tong, P. M. Atkinson. Reconstruction of global 9 km, 8-day SMAP surface soil moisture dataset during 2015-2020 by spatio-temporal fusion. Journal of Remote Sensing, 2022, 9871246.
-
-- <b>Hist_SMAP</b> &nbsp;(<a href="https://doi.org/10.6084/m9.figshare.17621765">https://doi.org/10.6084/m9.figshare.17621765</a>)
-<br/>H. Yang, Q. Wang*, W. Zhao, P. M. Atkinson. Reconstruction of historical SMAP soil moisture dataset from 1979 to 2015 using CCI time-series. IEEE Transactions on Geoscience and Remote Sensing, 2024, 62: 4502619.
-
-- <b>Spatially seamless daily SMAP (SSD_SMAP)</b> &nbsp;(<a href="https://doi.org/10.6084/m9.figshare.20279514">https://doi.org/10.6084/m9.figshare.20279514</a>)
-<br/>H. Yang, Q. Wang*. Reconstruction of a spatially seamless, daily SMAP (SSD_SMAP) surface soil moisture dataset from 2015 to 2021. Journal of Hydrology, 2023, 621: 129579.
+<p>To be added...</p>
 
 <a name="Professional"></a>
 <h3><font color="black">Professional Service</font></h3>
-<h4><font color="black">Editorship</font></h4>
-
-- 2021 – Present	 &nbsp;&nbsp;&nbsp;&nbsp; 		Editorial Board, Remote Sensing of Environment
-- 2020 – Present	 &nbsp;&nbsp;&nbsp;&nbsp; 		Associate Editor, Science of Remote Sensing (sister journal of <b>RSE</b>)
-- 2017 – Present	 &nbsp;&nbsp;&nbsp;&nbsp; 		Associate Editor, Photogrammetric Engineering & Remote Sensing
-- 2017 – 2020			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   	Associate Editor, Computers & Geosciences
 
 <h4><font color="black">Journal Reviewer</font></h4>
 
