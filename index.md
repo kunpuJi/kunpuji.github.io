@@ -270,10 +270,7 @@ layout: default
 
   <a name="Datasets"></a>
   <h3>Datasets</h3>
-  <p>
-    <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785" target="_blank" class="social-btn" style="padding: 4px 10px; font-size: 0.8rem; background:#fff; border:1px solid #ddd; color:#555 !important;"><i class="fas fa-database"></i> Data Link</a><br>
-    <span style="font-size: 0.95em; color: #555; display: block; margin-top: 5px;">J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.</span>
-  </p>
+  <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Datasets will be uploaded soon...</p>
 
   <a name="Professional"></a>
   <h3>Professional Service</h3>
