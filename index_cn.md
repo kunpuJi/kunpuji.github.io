@@ -76,8 +76,21 @@ layout: default
   ul.styled-list li { margin-bottom: 12px; line-height: 1.7; color: #444; display: flex; align-items: baseline; gap: 12px; }
   ul.styled-list li::before { content: "•"; color: #005AB5; font-weight: bold; display: inline-block; flex-shrink: 0; }
 
-  .pub-item { display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; line-height: 1.7; color: #333; font-size: 1rem; text-align: justify; }
-  .pub-num { flex-shrink: 0; font-weight: bold; color: #333; }
+  /* 修复：移除 font-size，统一颜色为 #444 */
+  .pub-item { 
+    display: flex; 
+    align-items: baseline; 
+    gap: 12px; 
+    margin-bottom: 16px; 
+    line-height: 1.7; 
+    color: #444; 
+    text-align: justify; 
+  }
+  .pub-num { 
+    flex-shrink: 0; 
+    font-weight: bold; 
+    color: #444; 
+  }
   .pub-content { flex: 1; }
 
   #back-to-top { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000; width: 50px; height: 50px; border: none; outline: none; background-color: #005AB5; color: white; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-size: 20px; transition: all 0.3s ease; align-items: center; justify-content: center; }
@@ -119,8 +132,8 @@ layout: default
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> 邮箱</a>
-        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> 谷歌学术</a>
-        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
+        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> 谷歌学术</a>
+        <a href="https://www.researchgate.net/profile/Qunming_Wang" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
