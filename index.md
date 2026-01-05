@@ -14,7 +14,7 @@ redirect_from:
 
 <style>
   /* ==========================================================================
-     0. 基础清理
+     0. 基础设置
      ========================================================================== */
   .page-header { display: none !important; height: 0 !important; padding: 0 !important; margin: 0 !important; overflow: hidden !important; }
   .main-content { padding-top: 0 !important; margin-top: 0 !important; max-width: 100% !important; padding: 0 !important; }
@@ -23,7 +23,7 @@ redirect_from:
   a:hover { text-decoration: none; }
 
   /* ==========================================================================
-     1. 顶部 Hero 区域
+     1. 顶部 Hero 区域 & 语言切换按钮
      ========================================================================== */
   .hero-wrapper {
     width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
@@ -31,6 +31,33 @@ redirect_from:
     padding: 100px 20px; margin-bottom: 0;
     box-shadow: inset 0 0 0 1000px rgba(10, 35, 70, 0.5);
     display: flex; justify-content: center; align-items: center;
+  }
+
+  /* 语言切换按钮样式 */
+  .lang-switch {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 1002;
+  }
+  .lang-btn {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .lang-btn:hover {
+    background-color: #005AB5;
+    color: #fff !important;
+    transform: translateY(-2px);
   }
 
   /* ==========================================================================
@@ -65,59 +92,19 @@ redirect_from:
   .nav-item:hover { background-color: #eef4fb; color: #005AB5 !important; transform: translateY(-1px); }
 
   /* ==========================================================================
-     4. 正文样式 & 列表对齐优化 (Flexbox Gap)
+     4. 正文样式 & 列表优化
      ========================================================================== */
   .content-container { max-width: 1050px; margin: 0 auto; padding: 0 20px 60px 20px; }
-  
   h3 { font-size: 1.7rem; color: #222; border-left: 6px solid #005AB5; padding-left: 15px; margin-top: 60px; margin-bottom: 30px; font-weight: 700; }
   h4 { margin-top: 30px; margin-bottom: 15px; font-weight: 600; color: #555; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+  ul.styled-list { padding-left: 0; list-style: none; }
+  ul.styled-list li { margin-bottom: 12px; line-height: 1.7; color: #444; display: flex; align-items: baseline; gap: 12px; }
+  ul.styled-list li::before { content: "•"; color: #005AB5; font-weight: bold; display: inline-block; flex-shrink: 0; }
 
-  /* 通用列表样式 (News, Education等) */
-  ul.styled-list { 
-    padding-left: 0; 
-    list-style: none; 
-  }
-  ul.styled-list li { 
-    margin-bottom: 12px; 
-    line-height: 1.7; 
-    color: #444; 
-    display: flex; 
-    align-items: baseline;
-    gap: 12px; /* 统一间距 */
-  }
-  /* 自定义 Bullet */
-  ul.styled-list li::before {
-    content: "•";
-    color: #005AB5;
-    font-weight: bold;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-
-  /* 论文列表样式 (关键修改：颜色与间距) */
-  .pub-item {
-    display: flex;
-    align-items: baseline; /* 基线对齐保证文字底部对其 */
-    gap: 12px; /* 【修改点】使用 gap 控制固定间距，更紧凑 */
-    margin-bottom: 16px;
-    line-height: 1.7;
-    color: #333;
-    font-size: 1rem;
-    text-align: justify;
-  }
-  
-  /* 序号列 */
-  .pub-num {
-    /* width: 45px;  <-- 【修改点】移除固定宽度 */
-    flex-shrink: 0;
-    font-weight: bold;
-    color: #333; /* 【修改点】颜色改为黑色/深灰 */
-  }
-  
-  /* 内容列 */
-  .pub-content {
-    flex: 1;
-  }
+  /* 论文列表样式 */
+  .pub-item { display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; line-height: 1.7; color: #333; font-size: 1rem; text-align: justify; }
+  .pub-num { flex-shrink: 0; font-weight: bold; color: #333; }
+  .pub-content { flex: 1; }
 
   /* ==========================================================================
      5. 回到顶部按钮
@@ -131,15 +118,19 @@ redirect_from:
     .my-info p { justify-content: center; }
     .social-group { justify-content: center; }
     .nav-item { padding: 8px 12px; font-size: 0.85rem; }
+    .lang-switch { top: 15px; right: 15px; } 
+    .lang-btn { padding: 6px 12px; font-size: 0.8rem; }
     #back-to-top { width: 45px; height: 45px; bottom: 20px; right: 20px; font-size: 18px; }
-    
-    /* 移动端移除旧的宽度设置 */
-    /* .pub-num { width: 35px; }  <-- 已移除 */
-    /* ul.styled-list li::before { width: 25px; } <-- 已移除 */
   }
 </style>
 
 <div class="hero-wrapper">
+  <div class="lang-switch">
+    <a href="/cn/" class="lang-btn">
+      <i class="fas fa-language"></i> 中文
+    </a>
+  </div>
+
   <div class="profile-card">
     <div class="card-left">
       <img src="kunpuji.jpg" alt="Kunpu Ji" class="avatar-img">
@@ -157,8 +148,8 @@ redirect_from:
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
-        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
+        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Qunming_Wang" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
@@ -298,11 +289,12 @@ redirect_from:
   <h3>Codes</h3>
   <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Codes will be uploaded soon...</p>
 
-
   <a name="Datasets"></a>
   <h3>Datasets</h3>
-  <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Datasets will be uploaded soon...</p>
-
+  <p>
+    <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785" target="_blank" class="social-btn" style="padding: 4px 10px; font-size: 0.8rem; background:#fff; border:1px solid #ddd; color:#555 !important;"><i class="fas fa-database"></i> Data Link</a><br>
+    <span style="font-size: 0.95em; color: #555; display: block; margin-top: 5px;">J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.</span>
+  </p>
 
   <a name="Professional"></a>
   <h3>Professional Service</h3>
