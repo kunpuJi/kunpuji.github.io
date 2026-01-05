@@ -3,28 +3,21 @@ permalink: /
 title: "About Me"
 excerpt: "About Me"
 author_profile: false
-classes: wide
-redirect_from: 
-  - /about/
-  - /about.html
+layout: default
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
-  /* ==========================================================================
-     0. 基础设置
-     ========================================================================== */
+  /* ================= Global Reset ================= */
   .page-header { display: none !important; height: 0 !important; padding: 0 !important; margin: 0 !important; overflow: hidden !important; }
   .main-content { padding-top: 0 !important; margin-top: 0 !important; max-width: 100% !important; padding: 0 !important; }
   body { font-family: 'Roboto', Arial, sans-serif !important; background-color: #fcfcfc; color: #333; scroll-behavior: smooth; }
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
-  /* ==========================================================================
-     1. 顶部 Hero 区域 & 语言切换按钮
-     ========================================================================== */
+  /* ================= Hero Section ================= */
   .hero-wrapper {
     width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
     background-image: url('polyu.jpg'); background-size: cover; background-position: center 30%;
@@ -33,36 +26,17 @@ redirect_from:
     display: flex; justify-content: center; align-items: center;
   }
 
-  /* 语言切换按钮样式 */
-  .lang-switch {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    z-index: 1002;
-  }
+  /* Language Switch Button */
+  .lang-switch { position: absolute; top: 30px; right: 30px; z-index: 1002; }
   .lang-btn {
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255,255,255,0.5);
-    padding: 8px 18px;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #333;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    display: inline-flex; align-items: center; gap: 6px;
+    text-decoration: none; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.5); padding: 8px 18px; border-radius: 30px;
+    font-size: 0.9rem; font-weight: bold; color: #333; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 6px;
   }
-  .lang-btn:hover {
-    background-color: #005AB5;
-    color: #fff !important;
-    transform: translateY(-2px);
-  }
+  .lang-btn:hover { background-color: #005AB5; color: #fff !important; transform: translateY(-2px); }
 
-  /* ==========================================================================
-     2. 个人信息卡片
-     ========================================================================== */
+  /* Profile Card */
   .profile-card {
     background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); padding: 50px; border-radius: 16px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.2); max-width: 950px; width: 95%;
@@ -79,39 +53,44 @@ redirect_from:
   .my-role { font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #eee; }
   .my-info p { margin: 6px 0; color: #444; font-size: 1rem; line-height: 1.6; display: flex; align-items: center; }
   .my-info i { width: 28px; color: #005AB5; text-align: center; margin-right: 10px; font-size: 1.1em; }
+  
   .social-group { margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap; }
-  .social-btn { background-color: #f0f5fa; color: #005AB5 !important; padding: 10px 20px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; border: 1px solid transparent; transition: all 0.2s ease; }
+  .social-btn { 
+    background-color: #f0f5fa; color: #005AB5 !important; padding: 10px 20px; border-radius: 8px; 
+    font-size: 0.95rem; font-weight: 600; border: 1px solid transparent; transition: all 0.2s ease; 
+  }
   .social-btn:hover { background-color: #005AB5; color: #fff !important; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 90, 181, 0.3); }
 
-  /* ==========================================================================
-     3. 导航栏
-     ========================================================================== */
-  .nav-wrapper { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100vw; margin-left: -50vw; left: 50%; position: relative; margin-bottom: 50px; display: flex; justify-content: center; }
+  /* ================= Navigation ================= */
+  .nav-wrapper { 
+    background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; position: sticky; top: 0; z-index: 999; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100vw; margin-left: -50vw; left: 50%; 
+    position: relative; margin-bottom: 50px; display: flex; justify-content: center; 
+  }
   .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 1200px; }
   .nav-item { color: #444 !important; font-size: 0.95rem; font-weight: 600; padding: 10px 18px; border-radius: 6px; transition: all 0.2s ease; }
   .nav-item:hover { background-color: #eef4fb; color: #005AB5 !important; transform: translateY(-1px); }
 
-  /* ==========================================================================
-     4. 正文样式 & 列表优化
-     ========================================================================== */
+  /* ================= Content & Lists ================= */
   .content-container { max-width: 1050px; margin: 0 auto; padding: 0 20px 60px 20px; }
   h3 { font-size: 1.7rem; color: #222; border-left: 6px solid #005AB5; padding-left: 15px; margin-top: 60px; margin-bottom: 30px; font-weight: 700; }
   h4 { margin-top: 30px; margin-bottom: 15px; font-weight: 600; color: #555; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+
+  /* Styled List (News, etc.) */
   ul.styled-list { padding-left: 0; list-style: none; }
   ul.styled-list li { margin-bottom: 12px; line-height: 1.7; color: #444; display: flex; align-items: baseline; gap: 12px; }
   ul.styled-list li::before { content: "•"; color: #005AB5; font-weight: bold; display: inline-block; flex-shrink: 0; }
 
-  /* 论文列表样式 */
+  /* Publications List (Flexbox) */
   .pub-item { display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; line-height: 1.7; color: #333; font-size: 1rem; text-align: justify; }
   .pub-num { flex-shrink: 0; font-weight: bold; color: #333; }
   .pub-content { flex: 1; }
 
-  /* ==========================================================================
-     5. 回到顶部按钮
-     ========================================================================== */
+  /* ================= Back to Top ================= */
   #back-to-top { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000; width: 50px; height: 50px; border: none; outline: none; background-color: #005AB5; color: white; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-size: 20px; transition: all 0.3s ease; align-items: center; justify-content: center; }
   #back-to-top:hover { background-color: #003d7a; transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
 
+  /* ================= Mobile Optimization ================= */
   @media (max-width: 800px) {
     .profile-card { flex-direction: column; text-align: center; padding: 40px 20px; gap: 30px; }
     .card-right { text-align: center; }
