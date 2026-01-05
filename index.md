@@ -157,8 +157,8 @@ redirect_from:
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
-        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Qunming_Wang" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
+        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
@@ -202,6 +202,7 @@ redirect_from:
   <a name="Education"></a>
   <h3>Education</h3>
   <ul class="styled-list">
+    <li><span><b>03/2024 – 03/2025:</b> Ph.D. in Geodesy, University of Stuttgart, Germany</span></li>
     <li><span><b>09/2021 – 05/2025:</b> Ph.D. in Geodesy, Tongji University, China</span></li>
     <li><span><b>09/2017 – 06/2020:</b> M.S. in Surveying Engineering, Tongji University, China</span></li>
     <li><span><b>09/2013 – 06/2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</span></li>
@@ -297,12 +298,11 @@ redirect_from:
   <h3>Codes</h3>
   <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Codes will be uploaded soon...</p>
 
+
   <a name="Datasets"></a>
   <h3>Datasets</h3>
-  <p>
-    <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785" target="_blank" class="social-btn" style="padding: 4px 10px; font-size: 0.8rem; background:#fff; border:1px solid #ddd; color:#555 !important;"><i class="fas fa-database"></i> Data Link</a><br>
-    <span style="font-size: 0.95em; color: #555; display: block; margin-top: 5px;">J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.</span>
-  </p>
+  <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Datasets will be uploaded soon...</p>
+
 
   <a name="Professional"></a>
   <h3>Professional Service</h3>
