@@ -81,9 +81,22 @@ layout: default
   ul.styled-list li { margin-bottom: 12px; line-height: 1.7; color: #444; display: flex; align-items: baseline; gap: 12px; }
   ul.styled-list li::before { content: "•"; color: #005AB5; font-weight: bold; display: inline-block; flex-shrink: 0; }
 
-  /* Publications List (Flexbox) */
-  .pub-item { display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; line-height: 1.7; color: #333; font-size: 1rem; text-align: justify; }
-  .pub-num { flex-shrink: 0; font-weight: bold; color: #333; }
+  /* Publications List (Flexbox) - Fixed Font Size & Color */
+  .pub-item { 
+    display: flex; 
+    align-items: baseline; 
+    gap: 12px; 
+    margin-bottom: 16px; 
+    line-height: 1.7; 
+    color: #444; /* Changed from #333 to #444 for consistency */
+    text-align: justify; 
+    /* Removed font-size: 1rem; to inherit default size */
+  }
+  .pub-num { 
+    flex-shrink: 0; 
+    font-weight: bold; 
+    color: #444; /* Changed from #333 to #444 */
+  }
   .pub-content { flex: 1; }
 
   /* ================= Back to Top ================= */
@@ -116,7 +129,7 @@ layout: default
     </div>
     
     <div class="card-right">
-      <div class="my-name">Kunpu Ji</div>
+      <div class="my-name">Kunpu Ji (嵇昆浦)</div>
       <div class="my-role">Postdoctoral Researcher</div>
       
       <div class="my-info">
@@ -127,7 +140,7 @@ layout: default
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
-        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
       </div>
@@ -172,7 +185,6 @@ layout: default
   <a name="Education"></a>
   <h3>Education</h3>
   <ul class="styled-list">
-    <li><span><b>03/2024 – 03/2025:</b> Ph.D. in Geodesy, University of Stuttgart, Germany</span></li>
     <li><span><b>09/2021 – 05/2025:</b> Ph.D. in Geodesy, Tongji University, China</span></li>
     <li><span><b>09/2017 – 06/2020:</b> M.S. in Surveying Engineering, Tongji University, China</span></li>
     <li><span><b>09/2013 – 06/2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</span></li>
@@ -270,7 +282,10 @@ layout: default
 
   <a name="Datasets"></a>
   <h3>Datasets</h3>
-  <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Datasets will be uploaded soon...</p>
+  <p>
+    <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785" target="_blank" class="social-btn" style="padding: 4px 10px; font-size: 0.8rem; background:#fff; border:1px solid #ddd; color:#555 !important;"><i class="fas fa-database"></i> Data Link</a><br>
+    <span style="font-size: 0.95em; color: #555; display: block; margin-top: 5px;">J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.</span>
+  </p>
 
   <a name="Professional"></a>
   <h3>Professional Service</h3>
