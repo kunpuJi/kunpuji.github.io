@@ -187,7 +187,7 @@ redirect_from:
     <li><span><b>12/2025:</b> A paper on geophysical time series filtering is accepted in <b>Surveys in Geophysics</b>.</span></li>
     <li><span><b>11/2025:</b> A paper on improved SSA method is published in <b>Acta Geodynamica et Geomaterialia</b>. <a href="https://www2.irsm.cas.cz/index_en.php?page=acta_detail_doi&id=557" target="_blank">[Link]</a></span></li>
     <li><span><b>10/2025:</b> A paper on wavelet filtering is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/11218160/" target="_blank">[Link]</a></span></li>
-    <li><span><b>10/2025:</b> A paper on Fourier filtering is published in <b>IEEE GPS Solutions</b>. <a href="https://link.springer.com/article/10.1007/s10291-025-01885-x" target="_blank">[Link]</a></span></li>
+    <li><span><b>10/2025:</b> A paper on Fourier filtering is published in <b>GPS Solutions</b>. <a href="https://link.springer.com/article/10.1007/s10291-025-01885-x" target="_blank">[Link]</a></span></li>
     <li><span><b>01/2025:</b> A paper on regularization to ill-posed models is published in <b>IEEE TGRS</b>. <a href="https://ieeexplore.ieee.org/document/10836814" target="_blank">[Link]</a></span></li>
   </ul>
 
