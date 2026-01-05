@@ -140,7 +140,7 @@ layout: default
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
-        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
       </div>
