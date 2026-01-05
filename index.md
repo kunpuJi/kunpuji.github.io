@@ -116,7 +116,7 @@ layout: default
     </div>
     
     <div class="card-right">
-      <div class="my-name">Kunpu Ji (嵇昆浦)</div>
+      <div class="my-name">Kunpu Ji</div>
       <div class="my-role">Postdoctoral Researcher</div>
       
       <div class="my-info">
