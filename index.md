@@ -129,7 +129,7 @@ layout: default
     </div>
     
     <div class="card-right">
-      <div class="my-name">Kunpu Ji</div>
+      <div class="my-name">Kunpu Ji (嵇昆浦)</div>
       <div class="my-role">Postdoctoral Researcher</div>
       
       <div class="my-info">
@@ -140,7 +140,7 @@ layout: default
 
       <div class="social-group">
         <a href="mailto:kunpu.ji@polyu.edu.hk" class="social-btn"><i class="fas fa-paper-plane"></i> Email</a>
-        <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=y5foruMAAAAJ&hl=en" target="_blank" class="social-btn"><i class="fas fa-book-open"></i> Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Kunpu-Ji-2" target="_blank" class="social-btn"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
       </div>
@@ -159,6 +159,7 @@ layout: default
     <a href="#Datasets" class="nav-item">Datasets</a>
     <a href="#Professional" class="nav-item">Services</a>
     <a href="#Awards" class="nav-item">Awards</a>
+    <a href="#Visitors" class="nav-item">Visitors</a>
   </div>
 </div>
 
@@ -283,7 +284,10 @@ layout: default
 
   <a name="Datasets"></a>
   <h3>Datasets</h3>
-  <p style="color: #777; font-style: italic; padding: 30px; background: #f9f9f9; border-radius: 8px; text-align: center; border: 1px dashed #ddd;">Datasets will be uploaded soon...</p>
+  <p>
+    <b>A set of seamless 0.05-degree, daily SIF product data (FGSIF)</b> <a href="https://doi.org/10.5281/zenodo.11918785" target="_blank" class="social-btn" style="padding: 4px 10px; font-size: 0.8rem; background:#fff; border:1px solid #ddd; color:#555 !important;"><i class="fas fa-database"></i> Data Link</a><br>
+    <span style="font-size: 0.95em; color: #555; display: block; margin-top: 5px;">J. Li, Q. Wang*, P. M. Atkinson. Filling gaps in global daily TROPOMI solar-induced chlorophyll fluorescence data from 2018 to 2021. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4413515.</span>
+  </p>
 
   <a name="Professional"></a>
   <h3>Professional Service</h3>
@@ -304,6 +308,12 @@ layout: default
     <li><span><b>2020:</b> Excellent Master's Dissertation of Tongji University (Top 2)</span></li>
     <li><span><b>2018:</b> Second Prize, The 15th "Huawei Cup" China Postgraduate Mathematical Contest in Modeling</span></li>
   </ul>
+
+  <a name="Visitors"></a>
+  <h3>Visitors</h3>
+  <div style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=3GtTfryAG8a0DFJ-rPK3GO7ULgGPzkUgZYrrrfthteQ&cl=ffffff&w=a"></script>
+  </div>
 
 </div>
 
