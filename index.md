@@ -61,78 +61,59 @@ layout: default
   }
   .social-btn:hover { background-color: #005AB5; color: #fff !important; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 90, 181, 0.3); }
 
-
-/* ================= Navigation (New Design) ================= */
+  /* ================= Navigation ================= */
   .nav-wrapper { 
-    /* 核心定位 */
-    position: sticky; 
-    top: 0; 
-    z-index: 999; 
-    
-    /* 强制全宽黑科技 */
-    width: 100vw; 
-    margin-left: -50vw; 
-    left: 50%; 
-    
-    /* 磨砂玻璃效果 */
-    background: rgba(255, 255, 255, 0.85); /* 半透明白 */
-    backdrop-filter: blur(12px); /* 模糊背景 */
-    -webkit-backdrop-filter: blur(12px); /* 兼容 Safari */
-    
-    /* 边框和阴影 */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); 
-    
-    padding: 12px 0; 
-    margin-bottom: 50px; 
+    background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; position: sticky; top: 0; z-index: 999; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100vw; margin-left: -50vw; left: 50%; 
+    position: relative; margin-bottom: 50px; display: flex; justify-content: center; 
+  }
+  .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; max-width: 1200px; }
+  .nav-item { color: #444 !important; font-size: 0.95rem; font-weight: 600; padding: 10px 18px; border-radius: 6px; transition: all 0.2s ease; }
+  .nav-item:hover { background-color: #eef4fb; color: #005AB5 !important; transform: translateY(-1px); }
+
+  /* ================= Content & Lists ================= */
+  .content-container { max-width: 1050px; margin: 0 auto; padding: 0 20px 60px 20px; }
+  h3 { font-size: 1.7rem; color: #222; border-left: 6px solid #005AB5; padding-left: 15px; margin-top: 60px; margin-bottom: 30px; font-weight: 700; }
+  h4 { margin-top: 30px; margin-bottom: 15px; font-weight: 600; color: #555; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+
+  /* Styled List (News, etc.) */
+  ul.styled-list { padding-left: 0; list-style: none; }
+  ul.styled-list li { margin-bottom: 12px; line-height: 1.7; color: #444; display: flex; align-items: baseline; gap: 12px; }
+  ul.styled-list li::before { content: "•"; color: #005AB5; font-weight: bold; display: inline-block; flex-shrink: 0; }
+
+  /* Publications List (Flexbox) - Fixed Font Size & Color */
+  .pub-item { 
     display: flex; 
-    justify-content: center; 
-    transition: all 0.3s ease;
+    align-items: baseline; 
+    gap: 12px; 
+    margin-bottom: 16px; 
+    line-height: 1.7; 
+    color: #444; /* Changed from #333 to #444 for consistency */
+    text-align: justify; 
+    /* Removed font-size: 1rem; to inherit default size */
   }
-
-  .nav-links { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 8px; /* 按钮之间的间距 */
-    max-width: 1200px; 
-    padding: 0 10px;
+  .pub-num { 
+    flex-shrink: 0; 
+    font-weight: bold; 
+    color: #444; /* Changed from #333 to #444 */
   }
+  .pub-content { flex: 1; }
 
-  .nav-item { 
-    color: #555 !important; 
-    font-size: 0.95rem; 
-    font-weight: 500; 
-    padding: 8px 16px; 
-    border-radius: 50px; /* 胶囊形状 */
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); 
-    text-decoration: none;
-    position: relative;
-  }
+  /* ================= Back to Top ================= */
+  #back-to-top { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000; width: 50px; height: 50px; border: none; outline: none; background-color: #005AB5; color: white; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-size: 20px; transition: all 0.3s ease; align-items: center; justify-content: center; }
+  #back-to-top:hover { background-color: #003d7a; transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
 
-  /* 悬停效果 */
-  .nav-item:hover { 
-    background-color: rgba(0, 90, 181, 0.08); /* 极淡的 PolyU 蓝背景 */
-    color: #005AB5 !important; /* PolyU 蓝文字 */
-    transform: translateY(-1px); /* 轻微上浮 */
-    font-weight: 600; /* 字体加粗一点点 */
-  }
-
-  /* 移动端适配微调 */
+  /* ================= Mobile Optimization ================= */
   @media (max-width: 800px) {
-    .nav-wrapper {
-      padding: 10px 0;
-    }
-    .nav-links {
-      gap: 5px;
-    }
-    .nav-item { 
-      padding: 6px 12px; 
-      font-size: 0.85rem; 
-    }
+    .profile-card { flex-direction: column; text-align: center; padding: 40px 20px; gap: 30px; }
+    .card-right { text-align: center; }
+    .my-info p { justify-content: center; }
+    .social-group { justify-content: center; }
+    .nav-item { padding: 8px 12px; font-size: 0.85rem; }
+    .lang-switch { top: 15px; right: 15px; } 
+    .lang-btn { padding: 6px 12px; font-size: 0.8rem; }
+    #back-to-top { width: 45px; height: 45px; bottom: 20px; right: 20px; font-size: 18px; }
   }
-
-  
 </style>
 
 <div class="hero-wrapper">
