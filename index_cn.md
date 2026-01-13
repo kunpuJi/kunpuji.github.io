@@ -195,20 +195,21 @@ layout: default
   <a name="Publications"></a>
   <h3>发表论文</h3>
 
+  <h4>2026</h4>
+  <div class="pub-item">
+    <div class="pub-num">[1]</div>
+    <div class="pub-content"><b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <b><i>Surveys in Geophysics</i></b>, 2026. https://doi.org/10.1007/s10712-025-09924-5</div>
+  </div>
+
   <h4>2025</h4>
   <div class="pub-item">
-    <div class="pub-num">[6]</div>
+    <div class="pub-num">[5]</div>
     <div class="pub-content"><b>K. Ji</b>, Y. Shen, F. Wang. Minimum Norm Least Squares Wavelet Filtering for Processing Incomplete Geodetic Time Series. <b><i>IEEE Transactions on Geoscience and Remote Sensing</i></b>, 2025, 63: 1-19.</div>
   </div>
 
   <div class="pub-item">
-    <div class="pub-num">[5]</div>
-    <div class="pub-content"><b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. <b><i>GPS Solutions</i></b>, 2025, 29: 130.</div>
-  </div>
-
-  <div class="pub-item">
     <div class="pub-num">[4]</div>
-    <div class="pub-content"><b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <b><i>Surveys in Geophysics</i></b>, 2025. (Accepted)</div>
+    <div class="pub-content"><b>K. Ji</b>, Y. Shen, N. Sneeuw, et al. Least Squares Fourier Filter for Processing Incomplete and Heterogeneous GNSS Position Time Series. <b><i>GPS Solutions</i></b>, 2025, 29: 130.</div>
   </div>
 
   <div class="pub-item">
