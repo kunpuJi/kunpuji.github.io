@@ -189,17 +189,17 @@ layout: default
   <h3>Education</h3>
   <ul class="styled-list">
     <li><span><b>03&#47;2024&#8203; – &#8203;03&#47;2025:</b> Ph.D. in Geodesy, University of Stuttgart, Germany</span></li>
-    <li><span><b>09&#47;2021 – 05&#47;2025:</b> Ph.D. in Geodesy, Tongji University, China</span></li>
-    <li><span><b>09&#47;2017 – 06&#47;2020:</b> M.S. in Surveying Engineering, Tongji University, China</span></li>
-    <li><span><b>09&#47;2013 – 06&#47;2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</span></li>
+    <li><span><b>09&#47;2021&#8203; – &#8203;05&#47;2025:</b> Ph.D. in Geodesy, Tongji University, China</span></li>
+    <li><span><b>09&#47;2017&#8203; – &#8203;06&#47;2020:</b> M.S. in Surveying Engineering, Tongji University, China</span></li>
+    <li><span><b>09&#47;2013&#8203; – &#8203;06&#47;2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</span></li>
   </ul>
 
   <a name="Experience"></a>
   <h3>Professional Experience</h3>
   <ul class="styled-list">
-    <li><span><b>10/2025 – Present:</b> Postdoctoral Research Fellow, The Hong Kong Polytechnic University (PolyU)</span></li>
-    <li><span><b>06/2025 – 09/2025:</b> Research Assistant, Tongji University, Shanghai</span></li>
-    <li><span><b>07/2020 – 07/2021:</b> Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc.</span></li>
+    <li><span><b>10&#47;2025&#8203; – &#8203;Present:</b> Postdoctoral Research Fellow, The Hong Kong Polytechnic University (PolyU)</span></li>
+    <li><span><b>06&#47;2025&#8203; – &#8203;09&#47;2025:</b> Research Assistant, Tongji University, Shanghai</span></li>
+    <li><span><b>07&#47;2020&#8203; – &#8203;07&#47;2021:</b> Senior GNSS Algorithm Engineer, Qianxun Spatial Intelligence Inc.</span></li>  
   </ul>
 
   <a name="Publications"></a>
