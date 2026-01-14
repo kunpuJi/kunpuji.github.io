@@ -6,6 +6,7 @@ author_profile: false
 layout: default
 ---
 
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
