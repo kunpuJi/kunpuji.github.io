@@ -188,7 +188,7 @@ layout: default
   <a name="Education"></a>
   <h3>Education</h3>
   <ul class="styled-list">
-    <li><span><b>03&#47;2024 – 03&#47;2025:</b> Ph.D. in Geodesy, University of Stuttgart, Germany</span></li>
+    <li><span><b>03&#47;2024&#8203; – &#8203;03&#47;2025:</b> Ph.D. in Geodesy, University of Stuttgart, Germany</span></li>
     <li><span><b>09&#47;2021 – 05&#47;2025:</b> Ph.D. in Geodesy, Tongji University, China</span></li>
     <li><span><b>09&#47;2017 – 06&#47;2020:</b> M.S. in Surveying Engineering, Tongji University, China</span></li>
     <li><span><b>09&#47;2013 – 06&#47;2017:</b> B.S. in Surveying Engineering, Nanjing Tech University, China</span></li>
