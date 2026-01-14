@@ -17,6 +17,16 @@ layout: default
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
+  /* 强行修复 iOS 自动加下划线的问题 */
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
+  
   .hero-wrapper {
     width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
     background-image: url('../polyu.jpg'); /* 适配 /cn/ 路径 */
