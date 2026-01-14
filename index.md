@@ -6,6 +6,7 @@ author_profile: false
 layout: default
 ---
 
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
@@ -17,6 +18,16 @@ layout: default
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
+/* 强行修复 iOS 自动加下划线的问题 */
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
+  
   /* ================= Hero Section ================= */
   .hero-wrapper {
     width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
