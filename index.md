@@ -18,7 +18,8 @@ layout: default
   a { color: #005AB5; text-decoration: none; }
   a:hover { text-decoration: none; }
 
-/* 强行修复 iOS 自动加下划线的问题 */
+/* ================= iOS Link Fix (The Nuclear Option) ================= */
+  /* 1. 针对通用自动识别的链接，强制继承父元素样式并禁止点击 */
   a[x-apple-data-detectors] {
     color: inherit !important;
     text-decoration: none !important;
@@ -26,6 +27,17 @@ layout: default
     font-family: inherit !important;
     font-weight: inherit !important;
     line-height: inherit !important;
+    pointer-events: none !important;
+  }
+
+  /* 2. 特别针对你的列表结构 (News/Education等) 中的日期 */
+  /* 强制列表里 <b> 标签下的任何链接(iOS生成的)变成普通文字样式 */
+  ul.styled-list li b a,
+  ul.styled-list li span a {
+    color: #444 !important; /* 强制深灰色，防止变蓝 */
+    text-decoration: none !important; /* 去掉下划线 */
+    border-bottom: none !important;
+    pointer-events: none !important; /* 禁止点击 */
   }
   
   /* ================= Hero Section ================= */
