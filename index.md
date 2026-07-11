@@ -211,7 +211,7 @@ layout: default
     <div class="pub-content"><b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <b><i>Surveys in Geophysics</i></b>, 2026. https://doi.org/10.1007/s10712-025-09924-5</div>
   </div>
   
-<div class="pub-item">
+  <div class="pub-item">
     <div class="pub-num">[2]</div>
     <div class="pub-content"><b>K. Ji</b>, Y. Shen, X. Mi, W. Chen, B.Li, Q. Chen. Variance Component Estimation in Linear Ill-Posed Models via Null-Space Projections. <b><i>Journal of Geodesy (Under Review)</i></b>, 2026. https://doi.org/10.21203/rs.3.rs-10299604/v1</div>
   </div>
