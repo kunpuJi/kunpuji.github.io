@@ -209,7 +209,7 @@ layout: default
 
   <h4>2026</h4>
   <div class="pub-item">
-    <div class="pub-num">[1]</div>
+    <div class="pub-num">[3]</div>
     <div class="pub-content"><b>K. Ji</b>, L. Zhang, F. Wang. Filtering Unevenly Spaced Geophysical Time Series as an Ill-Posed Problem. <b><i>Surveys in Geophysics</i></b>, 2026. https://doi.org/10.1007/s10712-025-09924-5</div>
   </div>
 
@@ -219,7 +219,7 @@ layout: default
   </div>
 
   <div class="pub-item">
-    <div class="pub-num">[3]</div>
+    <div class="pub-num">[1]</div>
     <div class="pub-content"><b>K. Ji</b>, Y. Shen, W. Chen, B.Li, L. Yang, X. Mi. Efficient Recursive Data Snooping for Correlated Observations. <b><i>Journal of Geodesy (Under Review)</i></b>, 2026. https://doi.org/10.21203/rs.3.rs-10297937/v1</div>
   </div>
 
